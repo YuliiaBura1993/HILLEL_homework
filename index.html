@@ -4,9 +4,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Homework_10</title>
+    <link rel="icon" href="./favicon.ico">
 </head>
 <body>
-    
+    <h1 class="font_2">Селекторы CSS</h1>
+    <h2 class="font_1">In CSS, selectors are patterns used to select the element(s) you want to style.</h2>
+    <table>
+        <tr class="line-1">
+            <th class="font_1 width-1 border">№</th>
+            <th class="font_1 width-2 border">Selector</th>
+            <th class="font_1 width-2 border">Example</th>
+            <th class="font_1 width-3 border">Example description</th>
+        </tr>
+        <tr class="line-2">
+            <th class="font_1 width-1 border">1</th>
+            <th class="font_1 width-2 border">.class</th>
+            <th class="font_1 width-2 border">.intro</th>
+            <th class="font_1 width-3 border">Selects all elements with class="intro"</th>
+        </tr>
+        <tr class="line-3">
+            <th class="font_1 width-1 border">2</th>
+            <th class="font_1 width-2 border">.class1.class2</th>
+            <th class="font_1 width-2 border">.name1.name2</th>
+            <th class="font_1 width-3 border">Selects all elements with both name1 and name2 set within its class attribute</th>
+        </tr>
+        <tr class="line-4">
+            <th class="font_1 width-1 border">3</th>
+            <th class="font_1 width-2 border">.class1 .class2</th>
+            <th class="font_1 width-2 border">.name1 .name2</th>
+            <th class="font_1 width-3 border">Selects all elements with name2 that is a descendant of an element with name1</th>
+        </tr>
+        <tr class="line-5">
+            <th class="font_1 width-1 border">5</th>
+            <th class="font_1 width-2 border">*</th>
+            <th class="font_1 width-2 border">*</th>
+            <th class="font_1 width-3 border">Selects all elements</th>
+        </tr>
+        <tr class="line-6">
+            <th class="font_1 width-1 border">6</th>
+            <th class="font_1 width-2 border">element</th>
+            <th class="font_1 width-2 border">p</th>
+            <th class="font_1 width-3 border">Selects all p elements</th>
+        </tr>
+        <tr class="line-7">
+            <th class="font_1 width-1 border">7</th>
+            <th class="font_1 width-2 border">element.class</th>
+            <th class="font_1 width-2 border">p.intro</th>
+            <th class="font_1 width-3 border">Selects all p elements with class="intro"</th>
+        </tr>
+        <tr class="line-8">
+            <th class="font_1 width-1 border">8</th>
+            <th class="font_1 width-2 border">element,element</th>
+            <th class="font_1 width-2 border">div, p</th>
+            <th class="font_1 width-3 border">Selects all div elements and all p elements</th>
+        </tr>
+        <tr class="line-9">
+            <th class="font_1 width-1 border">9</th>
+            <th class="font_1 width-2 border">element>element</th>
+            <th class="font_1 width-2 border">div > p</th>
+            <th class="font_1 width-3 border">Selects all p elements where the parent is a div element</th>
+        </tr>
+        <tr class="line-9">
+            <th class="font_1 width-1 border">10</th>
+            <th class="font_1 width-2 border">[attribute]</th>
+            <th class="font_1 width-2 border">[target]</th>
+            <th class="font_1 width-3 border">Selects all elements with a target attribute</th>
+        </tr>
+    </table>
+    <h2 class="font_2">Типы селекторов</h2>
+    <ul>
+        <li>по названию элемента</li>
+        <li>по id</li>
+        <li>по классу</li>
+        <li>по нескольким классам</li>
+        <li>по вложенности</li>
+    </ul>
 </body>
 </html>
