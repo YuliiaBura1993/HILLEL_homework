@@ -34,6 +34,12 @@ h2{
     margin: 15px;
     text-align: center;
 }
+h3{
+    font-size: 25px;
+    margin: 15px;
+    text-align: center;
+    font-style: italic;
+}
 th{
     text-align: center;
     /* background: none; */
@@ -75,4 +81,23 @@ li{
 }
 .name.name-2{
     text-decoration: underline;
+}
+ul .combination{
+    color: rgb(255, 0, 0);
+}
+/* ОБРАЩЕНИЕ к АТРИБУТАМ  */
+span[lang]{
+    font-weight: bold; /* Все span с атрибутом "lang" будут жирными */
+}
+span[lang=pol]{
+    color: green; /* Все span с названием атрибута pol будут зелёными */
+}
+span[class=blue]{
+    color: blue;
+     /* это так же сработает как и span[lang=pol]{} поскольку class так же является атрибутом, но так делать смысла нет, ведь легче через точечку */
+}
+#example{
+    margin: 15px;
+    font-size: 20px;
+    text-indent: 30px;
 }
