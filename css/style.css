@@ -24,6 +24,15 @@
 .font_2{
     font-family: 'Gentium Book Plus', serif;
 }
+.gray{
+    color: rgb(42, 41, 41);
+}
+.bardo{
+    color: #630000;
+}
+.gray_2{
+    color: rgb(61, 58, 58);
+}
 h1{
     margin: 15px;
     text-align: center;
