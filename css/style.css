@@ -1,0 +1,108 @@
+*, html, body{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-decoration: none;
+}
+
+.menu{
+    font-size: 0;
+}
+.menu-item{
+    display: inline-block;
+}
+/* a это линейный тег, чтоб сработал вертикальный паддинг, нужно элнмент сделать блочным */
+.menu-item-link{
+    display: block;
+    background: black;
+    color: white;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+/* Чтобы происходила инверсия (реверс- это было цвет и фон меняются цветами при навкдении например) нужно: */
+.menu-item-link:hover{
+    background: white;
+    color: black;
+}
+/* Чтоб у первого элемента сделать ораежевый фон, можно обратится через first-child, однако не забываем, что li для родителя  */
+/* по очередия являются 1й 2й 3й, но у <а> родитель это li, он вложен, поэтому обязательно добавляем .menu-item-link, а то не сработает!!! */
+/* .menu-item:first-child .menu-item-link{
+    background-color: orange;
+}
+.menu-item:last-child .menu-item-link{
+    background-color: orange;
+} */
+/* Если хотим, что оранживым стал 2й 3й ...14й элемент, в скобочках указываем номер которого хотим перекрасить */
+
+/* .menu-item:nth-child(2) .menu-item-link{
+    background-color: orange;
+} */
+
+/* Чтоб каждый 2й єлемент перекрасился, т.е. каждый четный, то пишем n рядом с двойкой!!! */
+
+/* .menu-item:nth-child(2n) .menu-item-link{
+    background-color: orange;
+} */
+/* Это применяется к любым тегам (блочным, строчны), т.е. это вложенность относительно родитедя */
+/* Чтоб каждый нечетный, то пишем (2n-1) */
+
+/* .menu-item:nth-child(2n-1) .menu-item-link{
+    background-color: green;
+} */
+
+/* nth-of-type(2n) лучше избегать , а то он концептуально может всё поломать! */
+
+
+/* ПСЕВДОЭЛЕМЕНТ - это создание нового элемента. Существует before и after у всех кроме инпутов и имдж пэшэк свг конвас, т.е. у всех самозакрывающихся */
+.menu-item-link::before{
+    content: '\2764'; /* в ковычках можно писать всё что угодно включая спецсимволы HTML */
+    margin-right: 10px; /* колор на сердечко влияет тоже */
+    /* color: blueviolet; */
+}
+/* .menu-item-link::after{
+    content: '\2605';
+    margin-left: 5px;
+    color: aqua;
+} */
+/* Если хоти вставить КАРТИНКУ! */
+.menu-item-link::after{
+    width: 35px;
+    height: 35px;
+    content: ''; /* не забываем добавить контент , а то не сработает! */
+    background: url(../img/totoro2.png); /* выбираем обязательно, чтоб ФОН картинки был прозрачный */
+    display: inline-block;
+    background-size: 100%;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+.menu-in{
+    display: none;
+    position: absolute;
+}
+.menu-in .menu-item, .menu-item:hover .menu-in{ /* Можно написать через запятую */
+    display: block;
+} 
+/* .menu-item:hover .menu-in{
+    display: block;
+} */
+.menu-in .menu-item-link{
+    width: 100%; /* Это чтоб одинаковой ширины с родителем был */
+    font-size: 14px; /* уменьшила размер, а то не помещался */
+}
+.menu-in-2{
+    display: none;
+    position: absolute;
+}
+.menu-in-2 .menu-item{
+    display: block;
+}
+.menu-item:hover .menu-in-2{
+    display: block;
+}
+.menu-in-2 .menu-item-link{
+    width: 100%; 
+    font-size: 15.7px; 
+}
