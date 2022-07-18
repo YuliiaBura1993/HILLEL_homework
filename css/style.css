@@ -1,0 +1,237 @@
+*, html, body{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+}
+.background_lg{
+    background: #EEEFF1;
+    background-size: 100%;
+}
+.background_blue{
+    background: #34547A;
+    background-size: 100%;
+}
+.background_white{
+    background: white;
+    background-size: 100%;
+}
+.black{
+    color: black;
+}
+.gray{
+    color:  #727272;
+}
+.white{
+    color: white;
+}
+.margin_left-399{
+    margin-left: 399px;
+}
+.margin_left-42{
+    margin-left: 42px;
+}
+.part_1{
+    width: 100%;
+    height: 257px;
+    display: inline-block;
+}
+.part_1-in{
+    margin: 0 auto;
+    /* background: red; */
+    width: 1920px;
+    height: 257px;
+    padding: 79px 0px 162px 0px;
+    box-sizing: border-box;
+}
+.part_1 li{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    display: inline-block;
+}
+.part_1 li a{
+    color: black;
+}
+.part_1 li a:hover{
+    color:  #34547A;
+    font-weight: 500;
+}
+
+/* Как установить цвет посещённой ссылки: */
+/* .part_1 li a:active{
+    color: black;
+} */
+/* .part_1 li a:visited{
+    color: red;
+} */
+/* Чтобы a:visited заработал Нужно, чтоб в href="" была ссылка, поскольку если её нет, то href="" воспринимает как буд-то  */
+/* мы зашли на свою же страничку и тогда перекрашивает весь текст взаданый цвет (красный) */
+
+.part_2{
+    width: 100%;
+    height: 105px;
+}
+.part_2-in{
+    margin: 0 auto;
+    width: 1920px;
+    height: 105px;
+    padding: 0px 0px 60px 399px;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 79px;
+}
+.part_3{
+    width: 100%;
+    height: 132px;
+}
+.part_3-in{
+    margin: 0 auto;
+    width: 1920px;
+    height: 132px;
+    padding: 0px 0px 66px 400px;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+.part_4{
+    width: 100%;
+    height: 206px;
+}
+.part_4-in{
+    margin: 0 auto;
+    width: 1920px;
+    height: 206px;
+    padding: 0px 0px 141px 399px;
+    box-sizing: border-box;
+}
+.button{
+    width: 225px;
+    height: 65px;
+    border: none;
+}
+.part_4-in button a{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.part_5{
+    width: 100%;
+    height: 192px;
+}
+h3{
+    margin: 0 auto;
+    width: 1920px;
+    height: 192px;
+    padding: 112px 0px 50px 0px;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+}
+.part_6{
+    width: 100%;
+    height: 167px;
+}
+.part_6 p{
+    margin: 0 auto;
+    width: 1920px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+}
+.part_6-in{
+    height: 167px;
+    padding-bottom: 100px;
+    box-sizing: border-box;
+}
+.part_7{
+    width: 100%;
+    height: 250px;
+}
+.part_7-in{
+    margin: 0 auto;
+    width: 1920px;
+    height: 250px;
+    /* position: relative; */
+}
+/* .block{
+    width: 142px;
+    height: 250px;
+    padding: 100px 0px;
+    box-sizing: border-box;
+    margin-left: 409px;
+    display: inline-block;
+} */
+/* .block_in-1{
+    display: inline-block;
+    height: 250px;
+    padding: 100px 0px;
+    box-sizing: border-box;
+} */
+/* .block_in-2{ */
+    /* display: inline-block; */
+    /* height: 100%; */
+    /* margin-left: 20px; */
+    /* margin-bottom: 3px; */
+    /* margin-top: 3px; */
+    /* padding: 3px 0px;
+    box-sizing: border-box; */
+    /* display: inline-block; */
+    /* margin: 3px 0px 3px 20px; */
+    /* padding: 0; */
+/* } */
+.block-1{
+    width: 47px;
+    height: 250px;
+    padding: 100px 0px;
+    box-sizing: border-box;
+    margin-left: 409px;
+    display: inline-block;
+}
+.block-2{
+    width: 71px;
+    height: 100%;
+    padding: 102px 0px;
+    box-sizing: border-box;
+    margin-left: 20px;
+    display: inline-block;
+    /* margin-top: 103px; */
+    /* position: absolute; */
+}
+.img{
+    width: 47px;
+    height: 50px;
+    /* padding: 100px 0px;
+    box-sizing: border-box; */
+    /* margin-top: 100px; */
+}
+.text{
+    /* height: 19px; */
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    /* display: block; */
+    /* margin-top: 103px; */
+
+
+}
+.text-2{
+    /* height: 15px; */
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    /* display: block; */
+   
+}
