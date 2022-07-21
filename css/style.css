@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'Graphik LCG Semibold'; /* можем тут имя писать какое захотим */
+    src: url('../pacifico/font-1/GraphikLCG-Semibold.eot');
+    src: url('../pacifico/font-1/GraphikLCG-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('../pacifico/font-1/GraphikLCG-Semibold.woff2') format('woff2'),
+        url('../pacifico/font-1/GraphikLCG-Semibold.woff') format('woff'),
+        url('../pacifico/font-1/GraphikLCG-Semibold.ttf') format('truetype'),
+        url('../pacifico/font-1/GraphikLCG-Semibold.svg#GraphikLCG-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Graphik LCG Regular';
+    src: url('../pacifico/font-2/GraphikLCG-Regular.eot');
+    src: url('../pacifico/font-2/GraphikLCG-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../pacifico/font-2/GraphikLCG-Regular.woff2') format('woff2'),
+        url('../pacifico/font-2/GraphikLCG-Regular.woff') format('woff'),
+        url('../pacifico/font-2/GraphikLCG-Regular.ttf') format('truetype'),
+        url('../pacifico/font-2/GraphikLCG-Regular.svg#GraphikLCG-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+*, html, body{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-style: normal;
+}
+.bold{
+    font-family: 'Graphik LCG Semibold';
+}
+.regular{
+    font-family: 'Graphik LCG Regular';
+}
+.background_white{
+    background: #FFFFFF;
+}
+.background_orange{
+    background: #FF6336;
+}
+.color_black{
+    color: #000000;
+}
+.color_white{
+    color: #FFFFFF;
+}
+header{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 25px 51px;
+    border-bottom: #CCCCCC solid 1px;
+}
+.logo{
+    width: 115x;
+    height: 27.5px;
+}
+.header-menu{
+    flex: 1;
+}
+.header-menu-link{
+    display: iblock; /* потому что это ссылка, не забываем добавлять */
+    padding: 14px 25px 11px 25px;
+    /* text-transform: capitalize; */
+    font-size: 15px;
+    line-height: 20px;
+}
+header form button{
+ 
+    font-size: 16px;
+    line-height: 45px;
+    text-align: center;
+}
+.header-button-1{
+    width: 118px;
+    height: 43px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    cursor: pointer; /* Указатель, обозначающий ссылку, обычно указующая рука. */
+}
+.header-button-2 {
+    width: 120px;
+    height: 45px;
+    border: none;
+margin-right: 100px;
+margin-left: 10px;
+cursor: pointer; /* Указатель, обозначающий ссылку, обычно указующая рука. */
+}
+.section{
+    width: 1298px; /* Что вот это за ширина, откуда мы её взяли?? */
+    margin: auto;
+    padding: 0 67px 172px 75px;
+}
+#first{
+    /* margin-top: 224px;
+    padding: 128px 0 172px 0; */
+    /* Что это такое для чего это нужно???? */
+}
+.first-form{
+    margin-top: 224px;
+}
+h1{
+    font-size: 65px;
+    line-height: 70px; 
+}
+.text-1{
+    font-size: 25px;
+    line-height: 35px;
+    margin-top: 51px;
+}
+section div form button{
+    width: 160px;
+    height: 60px;
+    font-size: 16px;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+}
+section div form{
+    margin-top: 50px;
+}
+.button-3{
+    width: 160px;
+    height: 60px;
+    border: none;
+}
+.button-4{
+    width: 158px;
+    height: 58px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    margin-left: 10px;
+}
+.text-2{
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 25px;
+}
+.img-1{
+    margin-top: 246px;
+    width: 759px;
+    height: 529px;
+}
