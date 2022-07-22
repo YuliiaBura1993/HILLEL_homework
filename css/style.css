@@ -70,14 +70,14 @@ header{
     line-height: 20px;
 }
 header form button{
- 
+    width: 120px;
+    height: 45px;
     font-size: 16px;
     line-height: 45px;
     text-align: center;
 }
 .header-button-1{
-    width: 118px;
-    height: 43px;
+   
     border: 1px solid rgba(0, 0, 0, 0.5);
     cursor: pointer; /* Указатель, обозначающий ссылку, обычно указующая рука. */
 }
@@ -123,13 +123,11 @@ section div form{
     margin-top: 50px;
 }
 .button-3{
-    width: 160px;
-    height: 60px;
+ 
     border: none;
 }
 .button-4{
-    width: 158px;
-    height: 58px;
+
     border: 1px solid rgba(0, 0, 0, 0.5);
     margin-left: 10px;
 }
