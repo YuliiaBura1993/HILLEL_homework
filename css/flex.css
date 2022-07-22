@@ -6,6 +6,7 @@
     justify-content: center;
 }
 .j-c-s{
+    display: flex;
     justify-content: flex-start;
 }
 .j-c-b{
@@ -29,8 +30,21 @@
     /* это если все элементы по центру */
 }
 .f-w-n{
+    display: flex;
     flex-wrap: nowrap;
+}
+.f-w-w{
+    display: flex;
+    flex-wrap: wrap;
 }
 .align-self-end{
 align-self: end;
+}
+.align-items-stretch{
+    display: flex;
+    align-items: stretch;
+}
+.direction-column{
+    display: flex;
+    flex-direction: column;
 }
