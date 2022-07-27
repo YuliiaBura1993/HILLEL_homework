@@ -9,6 +9,10 @@
     display: flex;
     justify-content: flex-start;
 }
+.j-c-e{
+    display: flex;
+    justify-content: flex-end;
+}
 .j-c-b{
     display: flex;
     justify-content: space-between; /* Выравнивает по основной оси – горизонтальной */
@@ -38,6 +42,7 @@
     flex-wrap: wrap;
 }
 .align-self-end{
+    display: flex;
 align-self: end;
 }
 .align-items-stretch{
@@ -47,4 +52,23 @@ align-self: end;
 .direction-column{
     display: flex;
     flex-direction: column;
+}
+.f-d-r{
+    display: flex;
+    flex-direction: row;
+}
+.a-i-f-e{
+    display: flex;
+    align-items: flex-end;
+}
+.a-i-f-s{
+    display: flex;
+    align-items: flex-start;
+}
+.a-c-stretch{
+    display: flex;
+    align-content: stretch;
+}
+.align-content-space-between{
+    align-content: space-between;
 }
