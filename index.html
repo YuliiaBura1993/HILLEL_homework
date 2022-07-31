@@ -6,233 +6,291 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/flex.css" class="rel"> <!-- ставим обязательно перед style, чтоб в стайле перезаписывались основные свойства -->
     <link rel="stylesheet" href="./css/margin.css"> <!-- сказали так можно делать, чтоб меньше строк было в основном, еще иногда отдельный css делают с цветами и фоном -->
-    <link rel="stylesheet" href="./css/adaptive.css" class="rel"> <!-- в ютубе посоветовали отдельным файлом делать -->
     <link rel="stylesheet" href="./css/style.css" class="rel">
     <title>Flexbox: макет</title>
 </head>
 <body>
-    <!-- <header class="a-i-c j-c-s background_white">
-        <img class="logo flex" src="./img/logo.png" alt="logo">
-        <nav class="header-menu">
-            <ul class="flex">
-                <li><a class="header-menu-link black regular" href="#first">Product</a></li>
-                <li><a class="header-menu-link black regular" href="">Features</a></li>
-                <li><a class="header-menu-link black regular" href="">Pricing</a></li>
-                <li><a class="header-menu-link black regular" href="">Case studies</a></li>
-                <li><a class="header-menu-link black regular" href="">Resources</a></li>
-            </ul>
-        </nav>
-        <form action="#" class="a-i-c"> 
-            <button class="header-button-1 background_white cursor-pointer"><a class="black bold text-center" href="#">Log in</a></button>
-            <button class="header-button-2 background_orange cursor-pointer margin-right-100 margin-left-10"><a class="white bold text-center" href="#">Try it free</a></button>
-        </form>
-    </header> -->
-    <section id="first" class="j-c-a a-i-c section margin-auto">
-        <div class="section-1 margin-top-224">
-            <h1 class="black bold">Accelerate <br /> localization from <br /> code to delivery</h1>
-            <p class="text-1 black regular margin-top-51">A localization and translation <br /> management platform for agile teams. <br />Embrace automation, workflow <br /> transparency, and fast project delivery.</p>
-            <form action="#" class="a-i-c margin-top-50"> 
+    <div class="header-wr">
+        <header class="header a-i-c j-c-s background_white">
+            <img class="logo flex" src="./img/logo.png" alt="logo">
+            <nav class="header-menu">
+                <!-- обращаемся к а через селектор -->
+                <ul class="flex">
+                    <li><a class="" href="#first">Product</a></li>
+                    <li><a class="" href="">Features</a></li>
+                    <li><a class="header-menu-link black regular" href="">Pricing</a></li>
+                    <li><a class="header-menu-link black regular" href="">Case studies</a></li>
+                    <li><a class="header-menu-link black regular" href="">Resources</a></li>
+                </ul>
+            </nav>
+            <form action="#" class="a-i-c"> 
+                <!-- форм, это только если отправляю куда-то, а так не пишем -->
+                <button class="header-button-1 background_white cursor-pointer"><a class="black bold text-center" href="#">Log in</a></button>
+                <button class="header-button-2 background_orange cursor-pointer margin-right-100 margin-left-10"><a class="white bold text-center" href="#">Try it free</a></button>
+            </form>
+        </header>
+    </div>
+    
+
+    <section class="banner">
+        <div class="container">
+            <div class="banner__content">
+                <h1 class="t1">Accelerate localization from code to delivery</h1>
+                <p>A localization and translation management platform for agile teams. Embrace automation, workflow   transparency, and fast project delivery.</p>
+                <div class="banner__btns">
+                    <a class="btn btn--first btn--fw white" href="#">Try it free</a>
+                    <a class="btn btn--second btn--fw" href="#">Book a demo</a>
+                </div>
+                <small>Try all features for 14 days · No credit card required</small>
+            </div>
+            <div class="banner__img">
+                <img src="./img//img-1.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="j-c-a a-i-c section-1 margin-auto">
+        <div class="section-1-in">
+            <h1 class="black bold">Accelerate localization from code to delivery</h1>
+            <p class="section-1-text black regular">A localization and translation management platform for agile teams. Embrace automation, workflow   transparency, and fast project delivery.</p>
+            <form action="#" class="a-i-c"> 
                 <button class="button-3 background_orange cursor-pointer"><a class="white bold text-center" href="#">Try it free</a></button>
                 <button class="button-4 background_white cursor-pointer"><a class="black bold text-center" href="#">Book a demo</a></button>
             </form>   
             <p class="text-2 regular">Try all features for 14 days · No credit card required</p>
         </div>
         <img class="img-1" src="./img/img-1.png" alt="img-1">
-    </section>
-    <div class="background_pink" >
-        <section class="section-2 center f-w-w margin-auto background_pink">
-            <h2 class="bold black text-center">The preferred localization <br /> tool of 1500+ companies</h2>
-            <div class="a-i-c j-c-b img-group">
-                <img class="group-1" src="./img/Group 1.png" alt="Group 1">
-                <img class="group-2" src="./img/Group 2.png" alt="Group 2">
-                <img class="group-3" src="./img/Group 3.png" alt="Group 3">
-                <img class="group-4" src="./img/Group 4.png" alt="Group 4">
-                <img class="group-5" src="./img/Group 5.png" alt="Group 5">
-                <img class="group-6" src="./img/Group 6.png" alt="Group 6">
-            </div>
-        </section>
+    </section> -->
+
+    <div class="background_pink" id="first">
+        <div class="container">
+            <section class="section-2 center f-w-w margin-auto">
+                <h2 class="bold black text-center">The preferred localization tool of 1500+ companies</h2>
+                <div class="a-i-c j-c-b img-group">
+                    <div>
+                        <img class="group-1" src="./img/Group 1.png" alt="Group 1">
+                    </div>
+                    <img class="group-2" src="./img/Group 2.png" alt="Group 2">
+                    <img class="group-3" src="./img/Group 3.png" alt="Group 3">
+                    <img class="group-4" src="./img/Group 4.png" alt="Group 4">
+                    <img class="group-5" src="./img/Group 5.png" alt="Group 5">
+                    <img class="group-6" src="./img/Group 6.png" alt="Group 6">
+                </div>
+
+                <ul class="sponsor-links">
+                    <li><img src="" alt=""></li>
+                    <!-- задать лишкам паддинги -->
+                    <li><img src="" alt=""></li>
+                    <li><img src="" alt=""></li>
+                </ul>
+            </section>
+        </div>
     </div>
-    <section class="section-3 background_white a-i-c j-c-s f-w-n border-box margin-auto">
-        <div class="block-1  direction-column">
-            <h2 class="bold black">Control the <br /> localization process</h2>
-            <p class="regular black p-block">Collaborate with your team in a single workspace. <br /> Add and assign <span>tasks</span>, track progress, and enjoy <br /> a seamless localization workflow where you know <br /> who is doing what and when.</p>
+<!--
+    <section class="item section-3 background_white border-box margin-auto ">
+        <div class="section-3-in direction-column block">
+            <h2 class="bold black">Control the localization process</h2>
+            <p class="regular black p-block">Collaborate with your team in a single workspace.   Add and assign <span>tasks</span>, track progress, and enjoy   a seamless localization workflow where you know   who is doing what and when.</p>
             <a class="bold black start-now" href="#">Start now</a>
         </div>
         <img class="img-pink" src="./img/img-pink-1.png" alt="img-pink-1">
     </section>
-    <section class="section-4 background_white a-i-c j-c-s f-w-n border-box margin-auto">
-        <div class="block-2 direction-column">
-            <h2 class="bold black">Shorten time <br /> to market</h2>
-            <p class="regular black p-block">Localize your product in parallel with the <br />  development cycle. Use the <span>Adobe XD</span>, <span>Figma</span>, <br /> and <span>Sketch</span> plugins to start working on <br /> translations as soon as the product design is <br /> ready. No more idle waiting.</p>
+
+    <section class="item section-4 background_white border-box margin-auto">
+        <div class="section-4-in direction-column block">
+            <h2 class="bold black">Shorten time to market</h2>
+            <p class="regular black p-block">Localize your product in parallel with the development cycle. Use the <span>Adobe XD</span>, <span>Figma</span>,   and <span>Sketch</span> plugins to start working on   translations as soon as the product design is   ready. No more idle waiting.</p>
             <a class="bold black start-now" href="#">Start now</a>
         </div>
         <img class="img-pink" src="./img/img-pink-2.png" alt="img-pink-2">
     </section>
-    <section class="section-5 background_white a-i-c j-c-s f-w-n border-box margin-auto">
-        <div class="block-3 direction-column margin-right-138">
+
+    <section class="item section-5 background_white border-box margin-auto ">
+        <div class="section-5-in direction-column margin-right-138 block">
             <h2 class="bold black">Ensure quality</h2>
-            <p class="regular black p-block">Use built-in tools — e.g. <span>translation memory,</span> machine <br /> translation, and <span>QA checks</span> — to enhance the quality <br /> and cohesion of translations. Add product <br /> <span>screenshots</span> for context and use the <span>in-context editors</span> <br /> for instant previews.</p>
+            <p class="regular black p-block">Use built-in tools — e.g. <span>translation memory,</span> machine   translation, and <span>QA checks</span> — to enhance the quality   and cohesion of translations. Add product   <span>screenshots</span> for context and use the <span>in-context editors</span>   for instant previews.</p>
             <a class="bold black start-now" href="#">Start now</a>
         </div>
         <img class="img-pink" src="./img/img-pink-3.png" alt="img-pink-3">
     </section>
-    <section class="section-6 background_white a-i-c j-c-s f-w-n border-box margin-auto">
-        <div class="block-4 direction-column">
-            <h2 class="bold black">ELess work for <br /> developers</h2>
-            <p class="regular black p-block">Eliminate the hassle of localization and let developers <br /> get back to their main tasks. Save hours with the <br /> powerful <span>API</span>, <span>CLI</span>, <span>mobile SDKs</span>, and integrations with <br /> <span>GitHub</span>, <span>Bitbucket</span>, <span>JIRA</span>, and more.</p>
+
+    <section class="item section-6 background_white border-box margin-auto ">
+        <div class="section-6-in direction-column block">
+            <h2 class="bold black">ELess work for   developers</h2>
+            <p class="regular black p-block">Eliminate the hassle of localization and let developers   get back to their main tasks. Save hours with the   powerful <span>API</span>, <span>CLI</span>, <span>mobile SDKs</span>, and integrations with   <span>GitHub</span>, <span>Bitbucket</span>, <span>JIRA</span>, and more.</p>
             <a class="bold black start-now" href="#">Start now</a>
         </div>
-        <img class="img-pink-last" src="./img/img-pink-4.png" alt="img-pink-4">
+        <img class="img-pink" src="./img/img-pink-4.png" alt="img-pink-4">
     </section>
-    <section class="section-7 background_light-pink border-box margin-auto">
-        <h2 class="bold black text-center">What can you localize with Lokalise?</h2>
-        <div class="section-7-in f-d-r a-i-f-s">
-            <div class="border-box  direction-column section-7-block">
-                <img class="img-small" src="./img/img-small-1.png" alt="img-small-1">
-                <p class="text-3 bold black text-center">Web apps</p>
-                <p class="text-4 regular black text-center">Any kind of web apps — backend,<br /> frontend, single page, blogs — you <br /> name it.</p>
+    
+    <div class="background_light-pink background-size">
+        <section class="section-7 background_light-pink border-box margin-auto">
+            <h2 class="bold black text-center">What can you localize with Lokalise?</h2>
+
+            <div class="section-7-in f-d-r a-i-f-s">
+                <div class="border-box  direction-column section-7-block">
+                    <img class="img-small" src="./img/img-small-1.png" alt="img-small-1">
+                    <p class="text-3 bold black text-center">Web apps</p>
+                    <p class="text-4 regular black text-center">Any kind of web apps — backend,  frontend, single page, blogs — you   name it.</p>
+                </div>
+                <div class="border-box j-c-c direction-column section-7-block">
+                    <img class="img-small" src="./img/img-small-2.png" alt="img-small-2">
+                    <p class="text-3 bold black text-center">Mobile apps</p>
+                    <p class="text-4 regular black text-center">Upload any mobile platform language   files. Embed <span>Lokalise iOS SDK</span> or   <span>Lokalise Android SDK</span> if you prefer. </p>
+                </div>
+                <div class="border-box j-c-c direction-column section-7-block">
+                    <img class="img-small" src="./img/img-small-3.png" alt="img-small-3">
+                    <p class="text-3 bold black text-center">Games</p>
+                    <p class="text-4 regular black text-center">Our cloud software is trusted by   many leading game developers   around the world.</p>
+                </div>
+                <div class="border-box j-c-c direction-column margin-top-75 section-7-block">
+                    <img class="img-small" src="./img/img-small-4.png" alt="img-small-4">
+                    <p class="text-3 bold black text-center">Documents</p>
+                    <p class="text-4 regular black text-center">Upload your DOCX and static HTML   files.</p>
+                </div>
+                <div class="border-box j-c-c direction-column margin-top-75 section-7-block">
+                    <img class="img-small" src="./img/img-small-5.png" alt="img-small-5">
+                    <p class="text-3 bold black text-center">Marketing e-mails</p>
+                    <p class="text-4 regular black text-center">Integrate with Salesforce Marketing   Cloud (coming soon) or translate   static e-mails.</p>
+                </div>
+                <div class="border-box j-c-c direction-column margin-top-75 section-7-block">
+                    <img class="img-small" src="./img/img-small-6.png" alt="img-small-6">
+                    <p class="text-3 bold black text-center">IoT</p>
+                    <p class="text-4 regular black text-center">We support most popular localization   file formats.</p>
+                </div>
             </div>
-             <div class="border-box j-c-c direction-column section-7-block">
-                <img class="img-small" src="./img/img-small-2.png" alt="img-small-2">
-                <p class="text-3 bold black text-center">Mobile apps</p>
-                <p class="text-4 regular black text-center">Upload any mobile platform language <br /> files. Embed <span>Lokalise iOS SDK</span> or <br /> <span>Lokalise Android SDK</span> if you prefer. </p>
-            </div>
-            <div class="border-box j-c-c direction-column section-7-block">
-                <img class="img-small" src="./img/img-small-3.png" alt="img-small-3">
-                <p class="text-3 bold black text-center">Games</p>
-                <p class="text-4 regular black text-center">Our cloud software is trusted by <br /> many leading game developers <br /> around the world.</p>
-            </div>
-            <div class="border-box j-c-c direction-column margin-top-75 section-7-block">
-                <img class="img-small" src="./img/img-small-4.png" alt="img-small-4">
-                <p class="text-3 bold black text-center">Documents</p>
-                <p class="text-4 regular black text-center">Upload your DOCX and static HTML <br /> files.</p>
-            </div>
-            <div class="border-box j-c-c direction-column margin-top-75 section-7-block">
-                <img class="img-small" src="./img/img-small-5.png" alt="img-small-5">
-                <p class="text-3 bold black text-center">Marketing e-mails</p>
-                <p class="text-4 regular black text-center">Integrate with Salesforce Marketing <br /> Cloud (coming soon) or translate <br /> static e-mails.</p>
-            </div>
-            <div class="border-box j-c-c direction-column margin-top-75 section-7-block">
-                <img class="img-small" src="./img/img-small-6.png" alt="img-small-6">
-                <p class="text-3 bold black text-center">IoT</p>
-                <p class="text-4 regular black text-center">We support most popular localization <br /> file formats.</p>
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
     <section class="section-8 background_white border-box margin-auto">
         <h2 class="bold black">Boost your localization team’s productivity tenfold</h2>
         <div class="section-8-in f-d-r j-c-b">
             <div class="section-8-block direction-column border-box">
                 <img class="section-8-img-1" src="./img/section-8-img-1.png" alt="section-8-img-1">
                 <p class="bold black section-8-topic">Managers</p>
-                <p class="regular black section-8-text margin-bottom-25">Update existing and launch new features <br /> and products while simultaneously <br /> localizing them in multiple languages. <br /> Streamline your team's workflow, <br /> maximize productivity, and speed up <br /> expansion to other markets.</p>
+                <p class="regular black section-8-text margin-bottom-25">Update existing and launch new features   and products while simultaneously   localizing them in multiple languages.   Streamline your team's workflow,   maximize productivity, and speed up   expansion to other markets.</p>
                 <a class="regular black section-8-text" href="#"><span>Learn more</span></a>
             </div>
             <div class="section-8-block direction-column border-box">
                 <img class="section-8-img-2" src="./img/section-8-img-2.png" alt="section-8-img-2">
                 <p class="bold black section-8-topic">Developers</p>
-                <p class="regular black section-8-text margin-bottom-25">Set up an integration with your code <br /> repository or your own custom SDK via <br /> Lokalise's <span>powerful API</span>. Do that once, and <br /> every time you make changes in the code, <br /> they'll be automatically imported to <br /> Lokalise for translation.</p>
+                <p class="regular black section-8-text margin-bottom-25">Set up an integration with your code   repository or your own custom SDK via   Lokalise's <span>powerful API</span>. Do that once, and   every time you make changes in the code,   they'll be automatically imported to   Lokalise for translation.</p>
                 <a class="regular black section-8-text" href="#"><span>Learn more</span></a>
             </div>
             <div class="section-8-block direction-column border-box">
                 <img class="section-8-img-3" src="./img/section-8-img-3.png" alt="section-8-img-3">
                 <p class="bold black section-8-topic">Translators</p>
-                <p class="regular black section-8-text margin-bottom-25">Eliminate double-work and neverending <br /> revisions with visual context (screenshots) <br /> and live previews. Improve the quality and <br /> speed of your translations with built-in <br /> CAT tools, like autocomplete, inline <br /> machine translation, and translation <br /> memory.</p>
+                <p class="regular black section-8-text margin-bottom-25">Eliminate double-work and neverending   revisions with visual context (screenshots)   and live previews. Improve the quality and   speed of your translations with built-in   CAT tools, like autocomplete, inline   machine translation, and translation   memory.</p>
                 <a class="regular black section-8-text" href="#"><span>Learn more</span></a>
             </div>
         </div>
     </section>  
-    <section class="section-9 background_blue f-d-r j-c-b border-box margin-auto">
-        <div class="section-9-block direction-column border-box">
-            <p class="regular black section-9-text">“Lokalise has turned a task we were dreading into an absolute <br /> pleasure. Great platform, intuitive UX, powerful API. The <br /> automatic text recognition for screenshots has been a <br /> lifesaver, and over-the-air updates are the icing on the cake.”</p>
-            <p class="black section-9-post">Edward Cooper, Chief Mobile Officer</p>
-            <img class="section-9-logo" src="./img/section-9-logo.png" alt="section-9-logo">
-        </div>
-        <img class="section-9-foto" src="./img/section-9-foto.png" alt="section-9-foto">
-    </section> 
-    <section class="section-10 background_dirty-lilac j-c-s a-i-c border-box margin-auto">
-        <img class="section-10-img" src="./img/section-10-img.png" alt="section-10-img">
-        <p class="bold black section-10-text">The most-loved translation <br /> management software</p>
-        <div class="section-10-box_in section-10-box_1 direction-column border-box">
-            <img class="section-10-logo_1" src="./img/section-10-logo_1.png" alt="section-10-logo_1">
-            <p class="regular black section-10-text-in">USERS LOVE US</p>
-        </div>
-        <div class="section-10-box_in direction-column border-box">
-            <img class="section-10-logo_2" src="./img/section-10-logo_2.png" alt="section-10-logo_2">
-            <p class="regular black section-10-text-in">HIGHEST RATED</p>
-        </div>
-    </section> 
+
+    <div class="background_blue background-size">
+        <section class="section-9 background_blue j-c-b border-box margin-auto">
+            <div class="section-9-block direction-column border-box">
+                <p class="regular black section-9-text">“Lokalise has turned a task we were dreading into an absolute   pleasure. Great platform, intuitive UX, powerful API. The   automatic text recognition for screenshots has been a   lifesaver, and over-the-air updates are the icing on the cake.”</p>
+                <p class="black section-9-post">Edward Cooper, Chief Mobile Officer</p>
+                <img class="section-9-logo" src="./img/section-9-logo.png" alt="section-9-logo">
+            </div>
+            <img class="section-9-foto" src="./img/section-9-foto.png" alt="section-9-foto">
+        </section> 
+    </div>
+
+    <div class="background-size background_dirty-lilac">
+        <section class="section-10 background_dirty-lilac j-c-s a-i-c border-box margin-auto">
+            <img class="section-10-img" src="./img/section-10-img.png" alt="section-10-img">
+            <p class="bold black section-10-text">The most-loved translation management software</p>
+            <div class="section-10-box_in section-10-box_1 border-box">
+                <img class="section-10-logo_1" src="./img/section-10-logo_1.png" alt="section-10-logo_1">
+                <p class="regular black section-10-text-in">USERS LOVE US</p>
+            </div>
+            <div class="section-10-box_in border-box">
+                <img class="section-10-logo_2" src="./img/section-10-logo_2.png" alt="section-10-logo_2">
+                <p class="regular black section-10-text-in">HIGHEST RATED</p>
+            </div>
+        </section> 
+    </div>
+
     <section class="section-11 background_white direction-column a-i-c border-box margin-auto">
-        <h1 class="black bold text-center">Integrate Lokalise with <br /> your work tools</h1>
-        <p class="black regular text-center text-1">Automate processes, eliminate routine tasks, <br /> and track progress with ease.</p>
+        <h1 class="black bold text-center">Integrate Lokalise with your work tools</h1>
+        <p class="black regular text-center section-11-text">Automate processes, eliminate routine tasks,   and track progress with ease.</p>
         <img class="section-11-img" src="./img/section-11-img.png" alt="section-11-img">
         <button class="section-11-button background_orange cursor-pointer"><a class="white bold text-center" href="#">See all integrations</a></button>
     </section> 
-    <section class="section-12 background_pink direction-column a-i-c border-box margin-auto">
-        <h1 class="black bold text-center">Localization made easy. <br /> Why wait?</h1>
-        <p class="black regular text-center section-8-text margin-top-29">Try for free or let us show you how it works.</p>
-        <button class="section-12-button background_black cursor-pointer margin-top-54"><a class="white bold text-center" href="#">Try it free</a></button>
-    </section> 
-    <section class="section-13 background_light-blue flex border-box margin-auto">
-        <div class="direction-column">
-            <p class="black bold section-13-text-head">Case Studies</p>
-            <img class="section-13-img" src="./img/section-13-img.png" alt="section-13-img">
-            <img class="section-13-logo" src="./img/section-13-logo.png" alt="section-13-logo">
-            <p class="black regular section-8-text margin-top-10">Riding towards global success <br /> with a 100% teammate <br /> enthusiasm</p>
-            <a class="black bold margin-top-15" href="#">Read more</a>
-        </div>
-        <div class="direction-column section-13-box-2 margine-left-140">
-            <p class="black bold section-13-text margin-bottom-6">Product</p>
-            <a class="black regular section-13-list" href="#">For developers</a>
-            <a class="black regular section-13-list" href="#">For managers</a>
-            <a class="black regular section-13-list" href="#">For translators</a>
-            <a class="black regular section-13-list" href="#">For designers</a>
-            <a class="black regular section-13-list" href="#">Integrations</a>
-            <a class="black regular section-13-list" href="#">Security</a>
-            <a class="black regular section-13-list" href="#">Pricing</a>
-            <a class="black regular section-13-list" href="#">Automations</a>
-        </div>
-        <div class="direction-column section-13-box-3 margine-left-109">
-            <p class="black bold section-13-text margin-bottom-6">Support</p>
-            <a class="black regular section-13-list" href="#">Contact</a>
-            <a class="black regular section-13-list" href="#">Documentation</a>
-            <a class="black regular section-13-list" href="#">Status</a>
-            <a class="black regular section-13-list" href="#">Product Updates</a>
-            <a class="black regular section-13-list" href="#">CLI Tool</a>
-            <a class="black regular section-13-list" href="#">API Reference</a>
-            <a class="black regular section-13-list" href="#">iOS and Android SDK</a>
-            <a class="black regular section-13-list" href="#">Supported File Formats</a>
-        </div>
-        <div class="direction-column section-13-box-4 j-c-b margine-left-51">
-            <p class="black bold section-13-text margin-bottom-6">Company</p>
-            <a class="black regular section-13-list" href="#">About</a>
-            <a class="black regular section-13-list" href="#">Blog</a>
-            <a class="black regular section-13-list" href="#">Careers | We`re Hiring</a>
-            <a class="black regular section-13-list" href="#">Case Studies</a>
-            <a class="black regular section-13-list" href="#">Media Kit</a>
-        </div>
-        <div class="direction-column section-13-box-5 j-c-b margine-left-62">
-            <p class="black bold section-13-text margin-bottom-6">Legal</p>
-            <a class="black regular section-13-list" href="#">Terms of Service</a>
-            <a class="black regular section-13-list" href="#">Privacy Policy</a>
-            <a class="black regular section-13-list" href="#">Cookie Policy</a>
-            <a class="black regular section-13-list" href="#">Privacy Shield</a>
-            <a class="black regular section-13-list" href="#">DPA</a>
-            <a class="black regular section-13-list" href="#">List of Sub-processors</a>
-            <a class="black regular section-13-list" href="#">Candidates Privacy <br /> Notice</a>
-        </div>
-    </section>
-    <section class="section-14 background_light-blue a-i-c border-box margin-auto">
-        <div class="section-14-in border-box">
-            <div class="section-14-in-left ">
-                <img class="section-14-logo" src="./img/section-14-logo.png" alt="section-14-logo">
-                <p class="margin-left-14 black regular section-14-text">Localization workflow for your web and mobile <br /> apps, games and digital content.</p>
+
+    <div class="background-size background_pink">
+        <section class="section-12 background_pink direction-column a-i-c border-box margin-auto">
+            <h1 class="black bold text-center">Localization made easy. Why wait?</h1>
+            <p class="black regular text-center section-8-text margin-top-29">Try for free or let us show you how it works.</p>
+            <button class="section-12-button background_black cursor-pointer margin-top-54"><a class="white bold text-center" href="#">Try it free</a></button>
+        </section> 
+    </div>
+
+    <div class="background_light-blue background-size">
+        <section class="section-13 background_light-blue flex border-box margin-auto">
+            <div class="direction-column section-13-box-1">
+                <p class="black bold section-13-text-head">Case Studies</p>
+                <img class="section-13-img" src="./img/section-13-img.png" alt="section-13-img">
+                <img class="section-13-logo" src="./img/section-13-logo.png" alt="section-13-logo">
+                <p class="section-13-box-1-text black regular section-8-text margin-top-10">Riding towards global success   with a 100% teammate   enthusiasm</p>
+                <a class="black bold margin-top-15" href="#">Read more</a>
             </div>
-            <div class="section-14-in-right margine-right-76">
-                <p class="black regular section-14-text">©2001-2020</p>
-                <p class="black regular section-14-text">All rights reserved.</p>
+            <div class="item-2 direction-column section-13-box-2">
+                <p class="black bold section-13-text margin-bottom-6">Product</p>
+                <a class="black regular section-13-list" href="#">For developers</a>
+                <a class="black regular section-13-list" href="#">For managers</a>
+                <a class="black regular section-13-list" href="#">For translators</a>
+                <a class="black regular section-13-list" href="#">For designers</a>
+                <a class="black regular section-13-list" href="#">Integrations</a>
+                <a class="black regular section-13-list" href="#">Security</a>
+                <a class="black regular section-13-list" href="#">Pricing</a>
+                <a class="black regular section-13-list" href="#">Automations</a>
             </div>
-        </div>
-    </section>
+            <div class="item-2 direction-column section-13-box-3">
+                <p class="black bold section-13-text margin-bottom-6">Support</p>
+                <a class="black regular section-13-list" href="#">Contact</a>
+                <a class="black regular section-13-list" href="#">Documentation</a>
+                <a class="black regular section-13-list" href="#">Status</a>
+                <a class="black regular section-13-list" href="#">Product Updates</a>
+                <a class="black regular section-13-list" href="#">CLI Tool</a>
+                <a class="black regular section-13-list" href="#">API Reference</a>
+                <a class="black regular section-13-list" href="#">iOS and Android SDK</a>
+                <a class="black regular section-13-list" href="#">Supported File Formats</a>
+            </div>
+            <div class="item-2 direction-column section-13-box-4 j-c-b">
+                <p class="black bold section-13-text margin-bottom-6">Company</p>
+                <a class="black regular section-13-list" href="#">About</a>
+                <a class="black regular section-13-list" href="#">Blog</a>
+                <a class="black regular section-13-list" href="#">Careers | We`re Hiring</a>
+                <a class="black regular section-13-list" href="#">Case Studies</a>
+                <a class="black regular section-13-list" href="#">Media Kit</a>
+            </div>
+            <div class="item-2 direction-column section-13-box-5 j-c-b">
+                <p class="black bold section-13-text margin-bottom-6">Legal</p>
+                <a class="black regular section-13-list" href="#">Terms of Service</a>
+                <a class="black regular section-13-list" href="#">Privacy Policy</a>
+                <a class="black regular section-13-list" href="#">Cookie Policy</a>
+                <a class="black regular section-13-list" href="#">Privacy Shield</a>
+                <a class="black regular section-13-list" href="#">DPA</a>
+                <a class="black regular section-13-list" href="#">List of Sub-processors</a>
+                <a class="black regular section-13-list" href="#">Candidates Privacy   Notice</a>
+            </div>
+        </section>
+    </div>
+
+    <div class="background_light-blue background-size">
+        <section class="section-14 background_light-blue a-i-c border-box margin-auto">
+            <div class="section-14-in border-box">
+                <div class="section-14-in-left ">
+                    <img class="section-14-logo" src="./img/section-14-logo.png" alt="section-14-logo">
+                    <p class="margin-left-14 black regular section-14-text text-left">Localization workflow for your web and mobile   apps, games and digital content.</p>
+                </div>
+                <div class="section-14-in-right margine-right-76">
+                    <p class="black regular section-14-text">©2001-2020</p>
+                    <p class="black regular section-14-text">All rights reserved.</p>
+                </div>
+            </div>
+        </section>
+    </div> -->
 </body>
 </html>
