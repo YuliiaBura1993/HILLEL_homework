@@ -285,8 +285,8 @@ header{
 
 
 .banner {
-    padding: 130px 0 170px 0;
-    max-width: 1290px;
+    padding: 130px 75px 170px 70px;
+    max-width: 1440px;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
@@ -295,6 +295,8 @@ header{
 .container{
     width: 100%; /* can be skipped */
     margin: 0 auto;
+}
+.container__1{
     display: flex;
     justify-content: space-between;
 }
@@ -375,7 +377,7 @@ img{
     .banner {
         padding: 50px 0;
     }
-    .container{
+    .container__1{
         padding: 0 30px;
         align-items: center;
     }
@@ -390,7 +392,7 @@ img{
     }
 }
 @media screen and (max-width: 760px) {
-    .container{
+    .container__1{
         flex-direction: column;
     }
     .banner__content{
