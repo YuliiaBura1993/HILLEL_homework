@@ -284,7 +284,6 @@ header{
 }
 
 
-
 .banner {
     padding: 130px 0 170px 0;
     max-width: 1290px;
@@ -295,7 +294,6 @@ header{
 }
 .container{
     width: 100%; /* can be skipped */
-    /* padding: 10px; */
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -365,7 +363,7 @@ img{
     max-width: 500px;
     margin: 0 auto;
 } */
-/* А по серединке надо задать? */
+
 .banner__content{
 
 }
