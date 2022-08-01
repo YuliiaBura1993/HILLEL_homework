@@ -159,21 +159,26 @@ header{
     .dropbtn{
         opacity: 1;
     }
-    /* .dropbtn::after{
-        content: '\2764';
-        margin-left: 5px;
-        color: #FF6336;  
-         display: inline-block;
-         vertical-align: middle;
-    } */
-    /* Не хочет вставать с боку */
         .menu-in{
         display: none;
         position: absolute;
+        margin-top: 26px;
     }
+    .header-menu{
+        padding: 14px 86px 14px 0;
+        background: #FF6336;
+        border: 1px solid black;
+    } 
     .header-menu a{
         padding: 14px 25px;
         font-size: 25px;
+        background: #FF6336;
+        /* border: 1px solid black; */
+        /* background: #000000; */
+        color: white;
+    }
+    .menu-in a{
+        border: 1px solid black;
     }
     .menu-in .menu-item, .menu-item:hover .menu-in{
         display: block;
@@ -210,7 +215,7 @@ header{
         flex: 0;
     }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 760px) {
     /* body{
         min-width: 320px; !!!
         font-size: 20px;
@@ -245,5 +250,30 @@ header{
     }
     .header__btns a{
         font-size: 15px;
+    }
+}
+@media screen and (max-width: 760px) {
+    header{
+        padding: 10px 15px;
+    }
+    .logo{
+        max-width: 90px;
+    }  
+    .header-menu{
+        padding: 15px 53px 25px 0;
+        background: #FF6336;
+        border: 1px solid black;
+    } 
+    .header-menu a{
+        padding: 15px 5px 25px 15px;
+        font-size: 15px;
+        font-weight: 600;
+        background: #FF6336;
+        /* border: 1px solid black; */
+        /* background: #000000; */
+        color: white;
+    }
+    .menu-in{
+        margin-top: 37px;
     }
 }
