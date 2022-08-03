@@ -4,23 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/flex.css" class="rel"> <!-- ставим обязательно перед style, чтоб в стайле перезаписывались основные свойства -->
     <link rel="stylesheet" href="./css/style.css" class="rel">
     <title>Flexbox: макет</title>
 </head>
 
 <body>
-    <div class="header-wr background_white">
+    <div class="header-wr">
         <header>
             <img class="logo" src="./img/logo.png" alt="logo">
             <nav class="header-menu menu-item">
                 <a class="menu-item-link dropbtn" href="">Menu</a>
                 <ul class="menu-in">
                     <li class="menu-item"><a class="menu-item-link" href="#first">Product</a></li>
-                    <li class="menu-item"><a class="menu-item-link" href="">Features</a></li>
-                    <li class="menu-item"><a class="menu-item-link" href="">Pricing</a></li>
-                    <li class="menu-item"><a class="menu-item-link" href="">Case studies</a></li>
-                    <li class="menu-item"><a class="menu-item-link" href="">Resources</a></li>
+                    <li class="menu-item"><a class="menu-item-link" href="#second">Features</a></li>
+                    <li class="menu-item"><a class="menu-item-link" href="#third">Pricing</a></li>
+                    <li class="menu-item"><a class="menu-item-link" href="#fourth">Case studies</a></li>
+                    <li class="menu-item"><a class="menu-item-link" href="#fifth">Resources</a></li>
                 </ul>
             </nav>
             <div class="header__btns">
@@ -43,6 +42,280 @@
             </div>
             <div class="banner__img">
                 <img src="./img//img-1.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="section__2" id="first">
+        <div class="container container__2">
+            <h2 class="t3">The preferred localization tool of 1500+ companies</h2>
+            <ul class="sponsor-links">
+                <li><img src="./img/Group 1.png" alt="Group 1"></li>
+                <li><img src="./img/Group 2.png" alt="Group 2"></li>
+                <li><img src="./img/Group 3.png" alt="Group 3"></li>
+                <li><img src="./img/Group 4.png" alt="Group 4"></li>
+                <li><img src="./img/Group 5.png" alt="Group 5"></li>
+                <li><img src="./img/Group 6.png" alt="Group 6"></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section__3" id="second">
+        <div class="container container__same">
+            <div class="main__content">
+                <h2 class="t4">Control the localization process</h2>
+                <p class="t5">Collaborate with your team in a single workspace. Add and assign <span>tasks</span>, track progress, and enjoy a seamless localization workflow where you know who is doing what and when.</p>
+                <a class="start-now" href="#">Start now</a>
+            </div>
+            <div class="pink__img">
+                <img src="./img/img-pink-1.png" alt="img-pink-1">
+            </div>
+        </div>
+    </section>
+
+    <section class="section__4">
+        <div class="container container__same">
+            <div class="pink__img">
+                <img src="./img/img-pink-2.png" alt="img-pink-2">
+            </div>
+            <div class="main__content">
+                <h2 class="t4">Shorten time to market</h2>
+                <p class="t5">Localize your product in parallel with the development cycle. Use the <span>Adobe XD</span>, <span>Figma</span>, and <span>Sketch</span> plugins to start working on translations as soon as the product design is ready. No more idle waiting.</p>
+                <a class="start-now" href="#">Start now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section__5">
+        <div class="container container__same">
+            <div class="main__content">
+                <h2 class="t4">Ensure quality</h2>
+                <p class="t5">Use built-in tools — e.g. <span>translation memory,</span> machine translation, and <span>QA checks</span> — to enhance the quality and cohesion of translations. Add product <span>screenshots</span> for context and use the <span>in-context editors</span> for instant previews.</p>
+                <a class="start-now" href="#">Start now</a>
+            </div>
+            <div class="pink__img">
+                <img src="./img/img-pink-3.png" alt="img-pink-3">
+            </div>
+        </div>
+    </section>
+
+    <section class="section__6">
+        <div class="container container__same">
+            <div class="pink__img">
+                <img src="./img/img-pink-4.png" alt="img-pink-4">
+            </div>
+            <div class="main__content">
+                <h2 class="t4">Less work for developers</h2>
+                <p class="t5">Eliminate the hassle of localization and let developers get back to their main tasks. Save hours with the powerful <span>API</span>, <span>CLI</span>, <span>mobile SDKs</span>, and integrations with <span>GitHub</span>, <span>Bitbucket</span>, <span>JIRA</span>, and more.</p>
+                <a class="start-now" href="#">Start now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section__7" id="third">
+        <div class="container container__7">
+            <h2 class="t3">What can you localize with Lokalise?</h2>
+            <div class="aside__pink">
+                <div class="aside__pink__inner">
+                    <div class="small--img">
+                        <img src="./img/img-small-1.png" alt="img-small-1">
+                    </div>
+                    <p class="t6">Web apps</p>
+                    <p class="t7">Any kind of web apps — backend, frontend, single page, blogs — you name it.</p>
+                </div>
+                <div class="aside__pink__inner">
+                    <div class="small--img">
+                        <img src="./img/img-small-2.png" alt="img-small-2">
+                    </div>
+                    <p class="t6">Mobile apps</p>
+                    <p class="t7">Upload any mobile platform language files. Embed <span>Lokalise iOS SDK</span> or <span>Lokalise Android SDK</span> if you prefer.</p>
+                </div>
+                <div class="aside__pink__inner">
+                    <div class="small--img">
+                        <img src="./img/img-small-3.png" alt="img-small-3">
+                    </div>
+                    <p class="t6">Games</p>
+                    <p class="t7">Our cloud software is trusted by many leading game developers around the world.</p>
+                </div>
+                <div class="aside__pink__inner">
+                    <div class="small--img">
+                        <img src="./img/img-small-4.png" alt="img-small-4">
+                    </div>
+                    <p class="t6">Documents</p>
+                    <p class="t7">Upload your DOCX and static HTML files.</p>
+                </div>
+                <div class="aside__pink__inner">
+                    <div class="small--img">
+                        <img src="./img/img-small-5.png" alt="img-small-5">
+                    </div>
+                    <p class="t6">Marketing e-mails</p>
+                    <p class="t7">Integrate with Salesforce Marketing Cloud (coming soon) or translate static e-mails.</p>
+                </div>
+                <div class="aside__pink__inner">
+                    <div class="small--img">
+                        <img src="./img/img-small-6.png" alt="img-small-6">
+                    </div>
+                    <p class="t6">IoT</p>
+                    <p class="t7">We support most popular localization file formats.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section__8" id="fourth">
+        <div class="container container__8">
+            <h2 class="t3">Boost your localization team’s productivity tenfold</h2>
+            <div class="s8__aside">
+                <div class="s8__aside__inner">
+                    <div class="s8__img" >
+                        <img src="./img/section-8-img-1.png" alt="section-8-img-1">
+                    </div>
+                    <p class="s8--title">Managers</p>
+                    <p class="s8--text">Update existing and launch new features and products while simultaneously localizing them in multiple languages. Streamline your team's workflow, maximize productivity, and speed up expansion to other markets.</p>
+                    <a class="s8--link s8--text" href="#"><span>Learn more</span></a>
+                </div>
+                <div class="s8__aside__inner">
+                    <div class="s8__img" >
+                        <img src="./img/section-8-img-2.png" alt="section-8-img-2">
+                    </div>
+                    <p class="s8--title">Developers</p>
+                    <p class="s8--text">Set up an integration with your code repository or your own custom SDK via Lokalise's <span>powerful API</span>. Do that once, and every time you make changes in the code, they'll be automatically imported to Lokalise for translation.</p>
+                    <a class="s8--link s8--text" href="#"><span>Learn more</span></a>
+                </div>
+                <div class="s8__aside__inner">
+                    <div class="s8__img" >
+                        <img src="./img/section-8-img-3.png" alt="section-8-img-3">
+                    </div>
+                    <p class="s8--title">Translators</p>
+                    <p class="s8--text">Eliminate double-work and neverending revisions with visual context (screenshots) and live previews. Improve the quality and speed of your translations with built-in CAT tools, like autocomplete, inline machine translation, and translation memory.</p>
+                    <a class="s8--link s8--text" href="#"><span>Learn more</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section__9" id="fifth">
+        <div class="container container__9">
+            <div class="s9__aside">
+                <p class="s9--text">“Lokalise has turned a task we were dreading into an absolute pleasure. Great platform, intuitive UX, powerful API. The automatic text recognition for screenshots has been a lifesaver, and over-the-air updates are the icing on the cake.”</p>
+                <small>Edward Cooper, Chief Mobile Officer</small>
+                <div class="s9__logo">
+                    <img src="./img/section-9-logo.png" alt="section-9-logo">
+                </div>
+            </div>
+            <div class="s9__foto">
+                <img src="./img/section-9-foto.png" alt="section-9-foto">
+            </div>
+        </div>
+    </section>
+
+    <section class="section__10">
+        <div class="container container__10">
+            <div class="s10__img">
+                <img src="./img/section-10-img.png" alt="section-10-img">
+            </div>
+            <p class="s10--title">The most-loved translation management software</p>
+            <div class="s10__aside">
+                <div class="s10__aside__in">
+                    <img class="s10--logo--left" src="./img/section-10-logo_1.png" alt="section-10-logo_1">
+                    <p class="slogan">USERS LOVE US</p>
+                </div>
+                <div class="s10__aside__in">
+                    <img class="s10--logo--right" src="./img/section-10-logo_2.png" alt="section-10-logo_2">
+                    <p class="slogan">HIGHEST RATED</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section__11">
+        <div class="container container__11">
+            <h2 class="big--title">Integrate Lokalise with your work tools</h2>
+            <p class="s11--text">Automate processes, eliminate routine tasks, and track progress with ease.</p>
+            <div class="s11__img">
+                <img src="./img/section-11-img.png" alt="section-11-img"> 
+            </div>
+            <a class="s11--btn" href="#">See all integrations</a>
+        </div>
+    </section>
+
+    <section class="section__12">
+        <div class="container container__12">
+            <h2 class="big--title">Localization made easy. Why wait?</h2>
+            <p class="s12--text">Try for free or let us show you how it works.</p>
+            <a class="s12--btn" href="#">Try it free</a>
+        </div>
+    </section>
+
+    <section class="section__13">
+        <div class="container container__13">
+            <div class="s13__content">
+                <p class="s13--header">Case Studies</p>
+                <div class="s13__foto">
+                    <img src="./img/section-13-img.png" alt="section-13-img">
+                </div>
+                <div class="s13__logo">
+                    <img src="./img/section-13-logo.png" alt="section-13-logo">
+                </div>
+                <p class="s13--text">Riding towards global success with a 100% teammate enthusiasm</p>
+                <a class="s13--link" href="#">Read more</a>
+            </div>
+            <div class="s13__aside">
+                <ul>
+                    <li class="s13--title">Product</li>
+                    <li class="s13--list"><a href="">For developers</a></li>
+                    <li class="s13--list"><a href="">For managers</a></li>
+                    <li class="s13--list"><a href="">For translators</a></li>
+                    <li class="s13--list"><a href="">For designers</a></li>
+                    <li class="s13--list"><a href="">Integrations</a></li>
+                    <li class="s13--list"><a href="">Security</a></li>
+                    <li class="s13--list"><a href="">Pricing</a></li>
+                    <li class="s13--list"><a href="">Automations</a></li>
+                </ul>
+                <ul>
+                    <li class="s13--title">Support</li>
+                    <li class="s13--list"><a href="">Contact</a></li>
+                    <li class="s13--list"><a href="">Documentation</a></li>
+                    <li class="s13--list"><a href="">Status</a></li>
+                    <li class="s13--list"><a href="">Product Updates</a></li>
+                    <li class="s13--list"><a href="">CLI Tool</a></li>
+                    <li class="s13--list"><a href="">API Reference</a></li>
+                    <li class="s13--list"><a href="">iOS and Android SDK</a></li>
+                    <li class="s13--list"><a href="">Supported File Formats</a></li> 
+                </ul>
+                <ul>
+                    <li class="s13--title">Company</li>
+                    <li class="s13--list"><a href="">About</a></li>
+                    <li class="s13--list"><a href="">Blog</a></li>
+                    <li class="s13--list"><a href="">Careers | We`re Hiring</a></li>
+                    <li class="s13--list"><a href="">Case Studies</a></li>
+                    <li class="s13--list"><a href="">Media Kit</a></li>
+                </ul>
+                <ul>
+                    <li class="s13--title">Legal</li>
+                    <li class="s13--list"><a href="">Terms of Service</a></li>
+                    <li class="s13--list"><a href="">Privacy Policy</a></li>
+                    <li class="s13--list"><a href="">Cookie Policy</a></li>
+                    <li class="s13--list"><a href="">Privacy Shield</a></li>
+                    <li class="s13--list"><a href="">DPA</a></li>
+                    <li class="s13--list"><a href="">List of Sub-processors</a></li>
+                    <li class="s13--list"><a href="">Candidates Privacy Notice</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section__14">
+        <div class="container container__14">
+            <div class="s14__content">
+                <div class="s14__logo">
+                    <img src="./img/section-14-logo.png" alt="section-14-logo">
+                </div>
+                <p class="s14--text">Localization workflow for your web and mobile apps, games and digital content.</p>
+            </div>
+            <div class="s14__date">
+                <p class="s14--text">©2001-2020</p>
+                <p class="s14--text">All rights reserved.</p>
             </div>
         </div>
     </section>
