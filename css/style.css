@@ -51,22 +51,11 @@ img{
 }
 
 
-/* .car{
-    width: 290px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    animation: carMove 3s infinite linear;
-   
-} */
-
 .wheel--1{
     left: 0;
-
 }
 .wheel--2{
     left: 65%;
-
 }
 .wheel{
     width: 67px;
@@ -80,4 +69,37 @@ img{
   50% { transform: rotate(180deg) }
  100% { transform: rotate(0deg) }
 
+}
+
+
+.serena{
+    width: 24px;
+    height: 30px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    border: 1px solid black;
+    background: blue;
+    position: absolute;
+    left: 23.5%;
+    top: -16%;
+
+    animation: serenaFlashes 2s infinite linear;
+/* для того чтобы цвет менялся каждую секунду, задала интервал 2сек, и чтоб не было переходного цвета (типо сереневого)
+с синего на красный указала с 1% до 49% синий (1 сек) и с 50% до 100% красный (1 сек)*/
+}
+@keyframes serenaFlashes{
+    1%{
+        /* background: blue; */
+    }
+    49%{
+    background: blue;
+    }
+    50%{
+        background: red;
+    }
+    100%{
+        background: red;
+    }
 }
