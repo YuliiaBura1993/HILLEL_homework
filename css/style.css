@@ -1,0 +1,54 @@
+*, html, body{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-style: normal;
+}
+img{
+    width: 100%;
+}
+.road{
+    width: 100%;
+    height: 50px;
+    background: gray;
+    position: fixed;
+    top: 60%;
+}
+.vehicle{
+    position: absolute;
+    width: 290px;
+    position: fixed;
+    left: 0;
+    top: 45%;
+    animation: vehicle 4s infinite linear;
+    z-index: 10; 
+    /* transform: scale(-1, 1);  */
+}
+
+@keyframes vehicle{
+    49%{
+        transform: scale(1, 1);  
+    }
+    50%{
+        left: calc(100% - 290px);  
+        /* transform: scale(-1, 1); */
+    }
+}
+
+/* .car{
+    width: 290px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    animation: carMove 3s infinite linear;
+   
+} */
+
+
+.wheel{
+    width: 67px;
+    position: absolute;
+    left: 0;
+    top: 20%;
+}
