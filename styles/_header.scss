@@ -37,6 +37,7 @@ section{
     p{
         max-width: 710px;
         margin: 0 auto;
+        @include text (16px, 400, 1.5);
     }
 }
 
