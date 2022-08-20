@@ -5,3 +5,14 @@
     text-decoration: none;
     font-style: normal;
 }
+.container-fluid{
+    img{
+        width: 150px;
+        height: 55px;
+    }
+    .navbar-toggler{
+        &-icon{
+            color: #170f1c; 
+        }
+    }
+}

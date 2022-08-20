@@ -5,4 +5,13 @@
   text-decoration: none;
   font-style: normal;
 }
+
+.container-fluid img {
+  width: 150px;
+  height: 55px;
+}
+
+.container-fluid .navbar-toggler-icon {
+  color: #170f1c;
+}
 /*# sourceMappingURL=style.css.map */
