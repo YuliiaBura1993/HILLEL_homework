@@ -15,4 +15,25 @@
 .container-fluid .navbar-toggler-icon {
   color: #170f1c;
 }
+
+section {
+  margin-top: 280px;
+  padding: 0 15px;
+}
+
+section h1 {
+  max-width: 710px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+}
+
+section h1 span {
+  color: #fc6f4e;
+}
+
+section p {
+  max-width: 710px;
+  margin: 0 auto;
+}
 /*# sourceMappingURL=style.css.map */
