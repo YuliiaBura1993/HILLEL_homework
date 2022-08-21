@@ -1,8 +1,10 @@
 // тут будут хранится переменные
-@mixin text ($num, $weight, $lh) {
+@mixin text($num, $weight, $lh) {
     font-family: 'Gentium Book Plus', serif;
     font-size: $num;
     font-weight: $weight;
     line-height: $lh;
 }
 // ПОЧЕМУ не работает???
+
+$orange: #fc6f4e;
