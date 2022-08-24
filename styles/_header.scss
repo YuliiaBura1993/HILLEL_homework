@@ -8,10 +8,10 @@
     font-family: 'Open Sans', sans-serif;
 }
 .orange{
-    color: #fc6f4e; 
+    color: $orange; 
     // Почему цвет не такой яркий как в макете???
  }
-.header{
+.header-background{
     background: $light-gray;
 }
 .navbar{
@@ -20,36 +20,49 @@
 }
 .header-text{
     padding: 280px 50px 115px 50px;
+    // мне кажется тут что-то не так, т.к. при сжатии падинги остаются и они большие очень, добавить адаптивнность?
     background: $light-gray;
     h1{
         margin: 0 auto;
-        max-width: 710px;
-        font-size: 50px;
-        line-height: 0.9;
-        font-weight: 600;
+        @include font(50px, 0.9, 600);
     }
     p{
         margin: 0 auto;
-        max-width: 710px;
-        // @include font (16px, 1.5, 400);
-        // @include font;
-        // Почему не работает миксин????
-        font-size: 16px;
-        line-height: 1.5;
-        font-weight: 400;
-        margin-top: 15px;
+        @include font(16px, 1.5, 400);
+        // margin-top: 15px;
     }
 }
-fieldset{
-    margin: 0 50px;
+.fieldset-background{
+    background: $light-gray;
+    fieldset{
+        // margin: 0 50px;
+        legend{
+            margin-bottom: 50px;
+            font-size: 20px;
+            line-height: 1.25;
+            font-weight: 600;
+        }
+        label{
+            font-size: 15px;
+            line-height: 1.6;
+            font-weight: 400;
+        }
+    }
 }
+
 .btn:disabled, fieldset:disabled .btn{
-    background-color: #ff5c36;
-    border-color: #ff5c36;
+    background-color: $bright-orange;
+    border-color: $bright-orange;
     opacity: 1;
     border-radius: 27px;
     // max-width: 240px;
 }
-// .btn{
-//     background: #fc6f4e;
-// }
+.form-control{
+    border: none;
+    // border-bottom: 1px solid #ced4da;
+    width: 65%;
+}
+.form-control:disabled {
+    background-color: white;
+}
+

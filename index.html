@@ -11,69 +11,66 @@
 <body>
     <!-- БУРГЕР -->
     <!-- <div class="header_bg"> -->
-      <div class="header">
-    <nav class="navbar fixed-top p-5">
-        <div class="container-fluid">
-          <img src="./img/Rounded Rectangle 8.png" alt="">
-          <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">MENU</h5>
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-light" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-light" href="#">Contacts</a>
-                </li>
-              </ul>
+    <div class="header-background">
+      <nav class="navbar fixed-top p-5">
+          <div class="container-fluid">
+            <img src="./img/Rounded Rectangle 8.png" alt="">
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">MENU</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Link</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Contacts</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-    </nav>
+      </nav>
     <!-- </div> -->
 
-    <section class="header-text">
-        <h1 class="text-center text-secondary"><span class="orange">Smart </span>Agency Landign Page</h1>
-        <p class="text-center text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, fuga provident. Libero magni quibusdam labore ad iste saepe hic, maxime qui ipsum tempore beatae, volu tomi ptates doloremque rerum aspernatur dolorum at!</p>
-    </section>
+      <section class="header-text">
+          <h1 class="text-center text-secondary col-7"><span class="orange">Smart </span>Agency Landign Page</h1>
+          <p class="text-center text-secondary col-7 mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, fuga provident. Libero magni quibusdam labore ad iste saepe hic, maxime qui ipsum tempore beatae, volu tomi ptates doloremque rerum aspernatur dolorum at!</p>
+      </section>
 
     <!-- FORMS -->
-        <fieldset disabled class="col-4 col-xs-12 bg-white shadow-lg p-3 mb-5 bg-body rounded">
-          <legend class="text-center">Send A Message</legend>
-          <div class="mb-3">
-            <label for="disabledTextInput" class="form-label">Disabled input</label>
-            <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
-          </div>
-          <div class="mb-3">
-            <label for="disabledSelect" class="form-label">Disabled select menu</label>
-            <select id="disabledSelect" class="form-select">
-              <option>Disabled select</option>
-            </select>
-          </div>
-          <div class="mb-3">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
-              <label class="form-check-label" for="disabledFieldsetCheck">
-                Can't check this
-              </label>
+      <div class="fieldset-background m-5">
+          <fieldset disabled class="col-lg-4 col-md-12 bg-white shadow-lg p-3 mb-5 bg-body rounded">
+            <legend class="text-center text-secondary"><span class="orange">Send</span> A Message</legend>
+            <div class="mb-3 d-flex flex-row border-bottom">
+              <label for="disabledTextInput" class="form-label text-secondary mb-0">Your Name</label>
+              <input type="text" id="disabledTextInput" class="form-control pb-0" placeholder="">
             </div>
-          </div>
-          <div class="d-flex justify-content-center">
-            <button type="submit col-2" class="btn text-white">Send Message  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg>
-            </button>
-          </div>
-        </fieldset>
+            <div class="mb-3 d-flex flex-row border-bottom">
+              <label for="disabledTextInput" class="form-label text-secondary mb-0">Your Email</label>
+              <input type="text" id="disabledTextInput" class="form-control pb-0" placeholder="">
+            </div>
+            <div class="mb-3 border-bottom">
+              <label for="disabledTextInput" class="form-label text-secondary">Your Message</label>
+              <input type="text" id="disabledTextInput" class="form-control" placeholder="">
+            </div>
+            <div class="d-flex justify-content-center">
+              <button type="submit col-2" class="btn text-white">Send Message  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg>
+              </button>
+            </div>
+          </fieldset>
       </div>
+
+    </div>
 
     <!-- копируем, вставляем перед </body> -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
