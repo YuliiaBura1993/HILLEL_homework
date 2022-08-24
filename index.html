@@ -11,7 +11,8 @@
 <body>
     <!-- БУРГЕР -->
     <!-- <div class="header_bg"> -->
-    <nav class="navbar bg-transparent fixed-top mt-5">
+      <div class="header">
+    <nav class="navbar fixed-top p-5">
         <div class="container-fluid">
           <img src="./img/Rounded Rectangle 8.png" alt="">
           <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
@@ -19,50 +20,35 @@
           </button>
           <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">MENU</h5>
               <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
+                  <a class="nav-link text-light" href="#">Link</a>
                 </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li>
-                      <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Contacts</a>
                 </li>
               </ul>
-              <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-success" type="submit">Search</button>
-              </form>
             </div>
           </div>
         </div>
     </nav>
     <!-- </div> -->
 
-    <section>
-        <h1 class="text-center"><span class="orange">Smart </span><span class="text-secondary">Agency Landign Page</span></h1>
+    <section class="header-text">
+        <h1 class="text-center text-secondary"><span class="orange">Smart </span>Agency Landign Page</h1>
         <p class="text-center text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, fuga provident. Libero magni quibusdam labore ad iste saepe hic, maxime qui ipsum tempore beatae, volu tomi ptates doloremque rerum aspernatur dolorum at!</p>
     </section>
 
     <!-- FORMS -->
-    <form class="col-4">
-        <fieldset disabled>
-          <legend>Send A Message</legend>
+        <fieldset disabled class="col-4 col-xs-12 bg-white shadow-lg p-3 mb-5 bg-body rounded">
+          <legend class="text-center">Send A Message</legend>
           <div class="mb-3">
             <label for="disabledTextInput" class="form-label">Disabled input</label>
             <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
@@ -81,10 +67,13 @@
               </label>
             </div>
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <div class="d-flex justify-content-center">
+            <button type="submit col-2" class="btn text-white">Send Message  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg>
+            </button>
+          </div>
         </fieldset>
-    </form>
-
+      </div>
 
     <!-- копируем, вставляем перед </body> -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
