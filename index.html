@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="./styles/style.css" class="rel" />
     <title>ДЗ 19. Bootstrap & SASS</title>
 </head>
-<body>
-    <!-- HEADER -->
+
+<!-- HEADER -->
     <!-- Бургер -->
     <section class="header-background">
-      <nav class="navbar fixed-top p-5">
+      <nav class="navbar fixed-top p-4 px-5">
           <div class="container-fluid">
             <img src="./img/Rounded Rectangle 8.png" alt="">
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
@@ -41,8 +41,8 @@
       </nav>
 
       <div class="header-text">
-          <h1 class="text-center text-secondary col-7"><span class="orange">Smart </span>Agency Landign Page</h1>
-          <p class="text-center text-secondary col-7 mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, fuga provident. Libero magni quibusdam labore ad iste saepe hic, maxime qui ipsum tempore beatae, volu tomi ptates doloremque rerum aspernatur dolorum at!</p>
+          <h1 class="text-center text-secondary col-12"><span class="orange">Smart </span>Agency Landign Page</h1>
+          <p class="text-center text-secondary mt-4 col-lg-7 col-md-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, fuga provident. Libero magni quibusdam labore ad iste saepe hic, maxime qui ipsum tempore beatae, volu tomi ptates doloremque rerum aspernatur dolorum at!</p>
       </div>
 
     <!-- Forms -->
@@ -62,7 +62,9 @@
               <input type="text" id="disabledTextInput" class="form-control" placeholder="">
             </div>
             <div class="d-flex justify-content-center">
-              <button type="submit col-2" class="btn text-white">Send Message  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+              <button type="submit col-2" class="btn text-white"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                </svg> Send Message  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg>
               </button>
             </div>
@@ -71,12 +73,134 @@
     </section>
 
 
-    <!-- BODY -->
+<!-- BODY -->
+    <!-- WORKING PROCESS -->
     <section class="section__working">
+      <!-- Text -->
       <div class="section__working--text">
-        <h1 class="text-center text-secondary col-4"><span class="light-orange">Working </span>Process</h1>
-        <p class="text-center text-secondary col-8 mt-4">Lorem ipsum dolor sit amet consectet ur adipiscing elit  Vestibulum bibend um vestibulum.</p>
-    </div>
+        <h1 class="text-center text-secondary col-lg-4 col-md-12"><span class="light-orange">Working </span>Process</h1>
+        <p class="text-center text-secondary col-lg-8 col-md-12 mt-4">Lorem ipsum dolor sit amet consectet ur adipiscing elit  Vestibulum bibend um vestibulum.</p>
+      </div>
+      <!-- Cards -->
+      <div class="d-flex justify-content-between flex-wrap p-4">
+        <!-- Card 1 -->
+        <div class="card bg_sky-blue position-relative m-4" style="width: 18rem;">
+          <img src="./img/horseshoe.png" class="card-img-top pb-2" alt="horseshoe">
+          <div class="card-body">
+            <h5 class="card-title text-center text-white text-opacity-75 pb-2">Koc Koi Tomi</h5>
+            <p class="card-text text-center text-white text-opacity-75 px-3">Lorem ipsum is dummy lorem very dumy</p>
+            <a href="#" class="btn bg_white text-center rounded-pill position-absolute top-100 start-50 translate-middle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+              </svg> Know More</a>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="card bg_lilac position-relative m-4" style="width: 18rem;">
+          <img src="./img/ladybug.png" class="card-img-top pb-2" alt="ladybug">
+          <div class="card-body">
+            <h5 class="card-title text-center text-white text-opacity-75 pb-2">Koimona Set</h5>
+            <p class="card-text text-center text-white text-opacity-75 px-3">Lorem ipsum is dummy you lorem very dumyL is</p>
+            <a href="#" class="btn bg_white text-center rounded-pill position-absolute top-100 start-50 translate-middle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+              </svg> Know More</a>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="card bg_dark-blue position-relative m-4" style="width: 18rem;">
+          <img src="./img/gears.png" class="card-img-top pb-2" alt="gears">
+          <div class="card-body">
+            <h5 class="card-title text-center text-white text-opacity-75 pb-2">Setting Koire</h5>
+            <p class="card-text text-center text-white text-opacity-75 px-3">Lorem ipsum is dummy lorem very yLorem ipsus</p>
+            <a href="#" class="btn bg_white text-center rounded-pill position-absolute top-100 start-50 translate-middle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+              </svg> Know More</a>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="card bg_crimson position-relative m-4" style="width: 18rem;">
+          <img src="./img/horseshoe.png" class="card-img-top pb-2" alt="horseshoe">
+          <div class="card-body">
+            <h5 class="card-title text-center text-white text-opacity-75 pb-2">Koc Koi Tomi</h5>
+            <p class="card-text text-center text-white text-opacity-75 px-3">Lorem ipsum is dummy lorem very dumy</p>
+            <a href="#" class="btn bg_white text-center rounded-pill position-absolute top-100 start-50 translate-middle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+              </svg> Know More</a>
+          </div>
+        </div>
+
+        <!-- <div class="card_1 position-relative">
+          <div class="card bg_crimson">
+            <img src="./img/gears.png" class="card-img-top" alt="gears">
+            <div class="card-body">
+                <h5 class="card-title text-center text-white text-opacity-75">Koc Koi Tomi</h5>
+                <p class="card-text text-center text-white text-opacity-75">Lorem ipsum is dummy lorem very dumy</p>
+            </div>
+          </div> -->
+
+      </div>
+
+
+
+      <!-- <div class="card_placement d-flex justify-content-between">
+        <div class="card_1 position-relative">
+          <div class="card bg_sky-blue">
+            <img src="./img/horseshoe.png" class="card-img-top" alt="horseshoe">
+            <div class="card-body">
+                <h5 class="card-title text-center text-white text-opacity-75">Koc Koi Tomi</h5>
+                <p class="card-text text-center text-white text-opacity-75">Lorem ipsum is dummy lorem very dumy</p>
+            </div>
+          </div>
+          <div class="btn_location position-absolute top-100 start-50 translate-middle">
+            <a href="#" class="btn text-center rounded-pill"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+            </svg> Know More</a>
+          </div>
+        </div>
+
+        <div class="card_1 position-relative">
+          <div class="card bg_lilac">
+            <img src="./img/ladybug.png" class="card-img-top" alt="ladybug">
+            <div class="card-body">
+                <h5 class="card-title text-center text-white text-opacity-75">Koimona Set</h5>
+                <p class="card-text text-center text-white text-opacity-75">Lorem ipsum is dummy you lorem very dumyL is </p>
+            </div>
+          </div>
+          <div class="btn_location position-absolute top-100 start-50 translate-middle">
+            <a href="#" class="btn text-center rounded-pill"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+            </svg> Know More</a>
+          </div>
+        </div>
+        <div class="card_1 position-relative">
+          <div class="card bg_dark-blue">
+            <img src="./img/gears.png" class="card-img-top" alt="gears">
+            <div class="card-body">
+                <h5 class="card-title text-center text-white text-opacity-75">Koc Koi Tomi</h5>
+                <p class="card-text text-center text-white text-opacity-75">Lorem ipsum is dummy lorem very dumy</p>
+            </div>
+          </div>
+          <div class="btn_location position-absolute top-100 start-50 translate-middle">
+            <a href="#" class="btn text-center rounded-pill"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+            </svg> Know More</a>
+          </div>
+        </div>
+        <div class="card_1 position-relative">
+          <div class="card bg_crimson">
+            <img src="./img/gears.png" class="card-img-top" alt="gears">
+            <div class="card-body">
+                <h5 class="card-title text-center text-white text-opacity-75">Koc Koi Tomi</h5>
+                <p class="card-text text-center text-white text-opacity-75">Lorem ipsum is dummy lorem very dumy</p>
+            </div>
+          </div>
+          <div class="btn_location position-absolute top-100 start-50 translate-middle">
+            <a href="#" class="btn text-center rounded-pill"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+            </svg> Know More</a>
+          </div>
+        </div>
+      </div> -->
+        
     </section>
 
     <!-- копируем, вставляем перед </body> -->

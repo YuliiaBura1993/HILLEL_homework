@@ -1,3 +1,69 @@
 .light-orange{
     color: $light-orange;
 }
+.bg_lilac{
+    background: $lilac;
+}
+.bg_sky-blue{
+    background: $sky-blue;
+}
+.bg_dark-blue{
+    background: $dark-blue;
+}
+.bg_crimson{
+    background: $crimson;
+}
+.bg_white{
+    background: $white;
+}
+
+.section__working{
+    margin-top: 145px;
+    margin-bottom: 110px;
+    &--text{
+        h1{
+            margin: 0 auto;
+            @include font(50px, 0.9, 600);
+        }
+        p{
+            margin: 0 auto;
+            @include font(16px, 1.5, 400);
+        }
+    }
+        
+    .card{
+        border: none;
+        border-radius: 0;
+        max-width: 260px;
+        .card-img-top {
+            width: 20%;
+            padding-top: 50px;
+            margin: 0 auto;
+        }
+        .card-body{
+            h5{
+                @include font(20px, 2.1, 600);
+            }
+            p{
+                @include font(15px, 1.5, 400);
+                margin-bottom: 2rem;
+            }
+            .btn{
+                width: 80%;
+                @include font(16px, 1.5, 400);
+                padding: 12px;
+            }
+            .btn:hover{
+                border: 1px solid rgb(224, 224, 224);
+                box-shadow: 0 15px 4px rgba(245, 245, 245);
+                background: $white;
+            }
+        }
+    }
+    .card:hover{
+        box-shadow: 0 0 10px 20px rgba(245, 245, 245);
+    }
+
+    // КАК сделать, чтоб карточки когда встают один под одним были по середине?
+
+}

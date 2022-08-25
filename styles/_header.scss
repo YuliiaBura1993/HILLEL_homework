@@ -9,18 +9,18 @@
 }
 .orange{
     color: $orange; 
-    // Почему цвет не такой яркий как в макете???
  }
 .header-background{
     background: $light-gray;
 }
 .navbar{
-    padding: 0 50px;
+    // padding: 0 30px;
     background: $light-gray;
 }
 .header-text{
     padding: 280px 50px 115px 50px;
-    // мне кажется тут что-то не так, т.к. при сжатии падинги остаются и они большие очень, добавить адаптивнность?
+    // !!!! тут что-то не так, т.к. при сжатии падинги остаются и они большие очень, добавить адаптивнность?
+    // и кусок белый торчит когда  687px
     background: $light-gray;
     h1{
         margin: 0 auto;
@@ -66,3 +66,4 @@
     background-color: white;
 }
 
+// Как правильно адаптировать margin padding которыя руками прописаю, так же как и обычно???
