@@ -16,21 +16,20 @@
 .bg_white{
     background: $white;
 }
-
+h2{
+    margin: 0 auto;
+    @include font(50px, 0.9, 600);
+}
+p{
+    margin: 0 auto;
+    @include font(16px, 1.5, 400);
+}
 .section__working{
     margin-top: 145px;
     margin-bottom: 110px;
     &--text{
-        h1{
-            margin: 0 auto;
-            @include font(50px, 0.9, 600);
-        }
-        p{
-            margin: 0 auto;
-            @include font(16px, 1.5, 400);
-        }
-    }
-        
+        margin-bottom: 100px;
+    }  
     .card{
         border: none;
         border-radius: 0;
@@ -63,7 +62,30 @@
     .card:hover{
         box-shadow: 0 0 10px 20px rgba(245, 245, 245);
     }
-
     // КАК сделать, чтоб карточки когда встают один под одним были по середине?
+}
 
+
+.section__featured{
+    &--text{
+        margin-top: 150px;
+        margin-bottom: 110px;
+    }
+    .card{
+        width: 360px;
+        height: 360px;
+        background: rgba(255,91,53);
+        border-radius: 0;
+    }
+}
+
+
+.section__services{
+    // margin-top: 1100px;
+    // *** Почему не отталкивается от предыдущего section??? Как исправить??
+
+    &--text{
+        margin-top: 315px;
+        margin-bottom: 135px;
+    }
 }
