@@ -39,6 +39,8 @@ p{
     margin: 0 auto;
     @include font(16px, 1.5, 400);
 }
+
+
 .section__working{
     margin-top: 145px;
     margin-bottom: 110px;
@@ -193,12 +195,22 @@ p{
 }
 
 
+
 .section__clients{
     &--text{
         margin-top: 285px;
         margin-bottom: 80px;
     }
 }
+// .carousel-dark .carousel-control-next-icon, .carousel-dark .carousel-control-prev-icon:hover{
+//     background: $bright-orange;
+// }
+    // .carousel-control-next-icon:hover {
+    //     background-image: $bright-orange;
+    // }
+    .slide--1{
+        margin: 0 auto;
+    }
 @media screen and (max-width: 992px) {
     .section__clients{
         &--text{
@@ -207,6 +219,9 @@ p{
         }
     }
 }
+
+
+
 
 
 .section__logo{
