@@ -1,3 +1,4 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,800&display=swap");
 *, html, body {
   margin: 0;
@@ -12,59 +13,53 @@
   color: #fc6f4e;
 }
 
-.header-background {
+.bg_gray {
   background: #f5f5f5;
 }
 
-.navbar {
-  background: #f5f5f5;
+.sectio_header .header-text {
+  padding: 280px 0 115px 0;
 }
-
-.header-text {
-  padding: 280px 50px 115px 50px;
-  background: #f5f5f5;
-}
-.header-text h1 {
-  margin: 0 auto;
+.sectio_header .header-text h1 {
   font-size: 50px;
   line-height: 0.9;
   font-weight: 600;
 }
-.header-text p {
-  margin: 0 auto;
+.sectio_header .header-text p {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
 }
-
-.fieldset-background {
-  background: #f5f5f5;
+.sectio_header .btn:hover {
+  background: #fc8569;
 }
-.fieldset-background fieldset legend {
-  margin-bottom: 50px;
+.sectio_header legend {
+  margin: 25px 0;
   font-size: 20px;
   line-height: 1.25;
   font-weight: 600;
 }
-.fieldset-background fieldset label {
+.sectio_header label {
   font-size: 15px;
   line-height: 1.6;
   font-weight: 400;
 }
-
-.btn:disabled, fieldset:disabled .btn {
-  background-color: #ff5c36;
+.sectio_header .btn {
+  background: #ff5c36;
+  border-color: #ff5c36;
+  border-radius: 27px;
+}
+.sectio_header .btn:disabled, .sectio_header fieldset:disabled .btn {
+  background: #ff5c36;
   border-color: #ff5c36;
   opacity: 1;
   border-radius: 27px;
 }
-
-.form-control {
+.sectio_header .form-control {
   border: none;
-  width: 65%;
+  width: 100%;
 }
-
-.form-control:disabled {
+.sectio_header .form-control:disabled {
   background-color: white;
 }
 
@@ -74,6 +69,14 @@
 
 .gray {
   color: #5c5c5c;
+}
+
+.team_gray {
+  color: #4c4c4c;
+}
+
+.light-black {
+  color: #333333;
 }
 
 .bg_lilac {
@@ -94,6 +97,14 @@
 
 .bg_white {
   background: white;
+}
+
+.bg_bright-orange {
+  background: #ff5c36;
+}
+
+.bg_light-pink {
+  background: #fff2F0;
 }
 
 h2 {
@@ -120,7 +131,6 @@ p {
 .section__working .card {
   border: none;
   border-radius: 0;
-  max-width: 260px;
 }
 .section__working .card .card-img-top {
   width: 20%;
@@ -139,11 +149,12 @@ p {
   margin-bottom: 2rem;
 }
 .section__working .card .card-body .btn {
-  width: 80%;
+  width: 90%;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   padding: 12px;
+  background: white;
 }
 .section__working .card .card-body .btn:hover {
   border: 1px solid rgb(224, 224, 224);
@@ -161,11 +172,98 @@ p {
 .section__featured .card {
   width: 360px;
   height: 360px;
-  background: rgb(255, 91, 53);
   border-radius: 0;
 }
 
 .section__services--text {
   margin-top: 315px;
   margin-bottom: 135px;
+}
+.section__services .card--img {
+  width: 95px;
+  height: 85px;
+}
+.section__services .card h5 {
+  font-size: 30px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #404040;
+}
+.section__services .card hr {
+  margin-top: -1.5rem;
+  margin-bottom: -0.5rem;
+  color: red;
+  opacity: 1;
+  border: 1px solid;
+  width: 12%;
+}
+.section__services .card p {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #4c4c4c;
+}
+.section__services .card a {
+  color: #4c4c4c;
+}
+.section__services .card .card--img:hover {
+  box-shadow: 0 0 10px 20px rgb(245, 245, 245);
+}
+.section__services .card a:hover {
+  box-shadow: 0 15px 4px rgb(245, 245, 245);
+}
+
+.section__team--text {
+  margin-top: 315px;
+  margin-bottom: 125px;
+}
+.section__team .card {
+  width: 360px;
+  height: 445px;
+  border-radius: 0;
+}
+.section__team .card-body h5 {
+  font-size: 30px;
+  line-height: 1;
+  font-weight: 600;
+}
+.section__team .card-body p {
+  font-size: 16px;
+  line-height: 2;
+  font-weight: 300;
+}
+.section__team .translate-middle {
+  transform: translate(-50%, -70%) !important;
+}
+
+.section__clients--text {
+  margin-top: 285px;
+  margin-bottom: 80px;
+}
+
+.section__logo {
+  margin-top: 220px;
+  margin-bottom: 80px;
+}
+
+.section__footer .btn {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+.section__footer .btn:hover {
+  box-shadow: 0 15px 4px rgb(222, 222, 222);
+  background: white;
+}
+.section__footer .footer-icon {
+  height: 50px;
+  width: 50px;
+  background-color: #d3d3d3;
+  border-radius: 50%;
+}
+.section__footer .footer-icon:hover {
+  box-shadow: 0 0 4px 8px rgb(222, 222, 222);
+  background: #ff5c36;
 }/*# sourceMappingURL=style.css.map */

@@ -10,60 +10,46 @@
 .orange{
     color: $orange; 
  }
-.header-background{
+.bg_gray{
     background: $light-gray;
 }
-.navbar{
-    // padding: 0 30px;
-    background: $light-gray;
-}
-.header-text{
-    padding: 280px 50px 115px 50px;
-    // !!!! тут что-то не так, т.к. при сжатии падинги остаются и они большие очень, добавить адаптивнность?
-    // и кусок белый торчит когда  687px
-    background: $light-gray;
-    h1{
-        margin: 0 auto;
-        @include font(50px, 0.9, 600);
-    }
-    p{
-        margin: 0 auto;
-        @include font(16px, 1.5, 400);
-        // margin-top: 15px;
-    }
-}
-.fieldset-background{
-    background: $light-gray;
-    fieldset{
-        // margin: 0 50px;
-        legend{
-            margin-bottom: 50px;
-            font-size: 20px;
-            line-height: 1.25;
-            font-weight: 600;
+.sectio_header{
+    .header-text{
+        padding: 280px 0 115px 0;
+        h1{
+            @include font(50px, 0.9, 600);
         }
-        label{
-            font-size: 15px;
-            line-height: 1.6;
-            font-weight: 400;
+        p{
+            @include font(16px, 1.5, 400);
         }
+    }
+    .btn:hover{
+        background: $light-orange;
+    }
+    legend{
+        margin: 25px 0;
+        @include font(20px, 1.25, 600);
+    }
+    label{
+        @include font(15px, 1.6, 400);
+    }
+    .btn{
+        background: $bright-orange;
+        border-color: $bright-orange;
+        border-radius: 27px
+    }
+    .btn:disabled, fieldset:disabled .btn{
+        background: $bright-orange;
+        border-color: $bright-orange;
+        opacity: 1;
+        border-radius: 27px;
+    }
+    .form-control{
+        border: none;
+        width: 100%;
+    }
+    .form-control:disabled {
+        background-color: white;
     }
 }
 
-.btn:disabled, fieldset:disabled .btn{
-    background-color: $bright-orange;
-    border-color: $bright-orange;
-    opacity: 1;
-    border-radius: 27px;
-    // max-width: 240px;
-}
-.form-control{
-    border: none;
-    // border-bottom: 1px solid #ced4da;
-    width: 65%;
-}
-.form-control:disabled {
-    background-color: white;
-}
-
-// Как правильно адаптировать margin padding которыя руками прописаю, так же как и обычно???

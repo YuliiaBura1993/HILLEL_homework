@@ -1,0 +1,21 @@
+.section__footer{
+    .btn{
+        @include font(16px, 1.5, 400);
+        margin-top: 45px;
+        margin-bottom: 45px;
+    }
+    .btn:hover{
+        box-shadow: 0 15px 4px rgba(222, 222, 222);
+        background: $white;
+    }
+    .footer-icon{
+        height: 50px;
+        width: 50px;
+        background-color: #d3d3d3;
+        border-radius: 50%;
+    }
+    .footer-icon:hover{
+        box-shadow: 0 0 4px 8px rgba(222, 222, 222);
+        background: $bright-orange;
+    }
+}
