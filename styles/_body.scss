@@ -77,7 +77,15 @@ p{
     .card:hover{
         box-shadow: 0 0 10px 20px rgba(245, 245, 245);
     }
-    // КАК сделать, чтоб карточки когда встают один под одним были по середине?
+}
+@media screen and (max-width: 992px) {
+    .section__working{
+        margin-top: 100px;
+        margin-bottom: 30px;
+        &--text{
+            margin-bottom: 50px;
+        }  
+    }
 }
 
 
@@ -92,12 +100,17 @@ p{
         border-radius: 0;
     }
 }
+@media screen and (max-width: 992px) {
+    .section__featured{
+        &--text{
+            margin-top: 100px;
+            margin-bottom: 50px;
+        }
+    }
+}
 
 
 .section__services{
-    // margin-top: 1100px;
-    // *** Почему не отталкивается от предыдущего section??? Как исправить??
-
     &--text{
         margin-top: 315px;
         margin-bottom: 135px;
@@ -138,6 +151,16 @@ p{
         }
     }
 }
+@media screen and (max-width: 992px) {
+    .section__services{
+        &--text{
+            margin-top: 100px;
+            margin-bottom: 50px;
+        }
+    }
+}
+
+
 .section__team{
     &--text{
         margin-top: 315px;
@@ -160,6 +183,15 @@ p{
         transform: translate(-50%,-70%)!important;
     }
 }
+@media screen and (max-width: 992px) {
+    .section__team{
+        &--text{
+            margin-top: 100px;
+            margin-bottom: 50px;
+        }
+    }
+}
+
 
 .section__clients{
     &--text{
@@ -167,10 +199,24 @@ p{
         margin-bottom: 80px;
     }
 }
+@media screen and (max-width: 992px) {
+    .section__clients{
+        &--text{
+            margin-top: 100px;
+            margin-bottom: 50px;
+        }
+    }
+}
+
 
 .section__logo{
     margin-top: 220px;
     margin-bottom: 80px;
 }
-
+@media screen and (max-width: 992px) {
+    .section__logo{
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+}
 
