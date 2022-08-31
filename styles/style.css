@@ -273,33 +273,93 @@ p {
     margin-bottom: 50px;
   }
 }
+.section__clients .slide--1 {
+  margin: 0 auto;
+  height: 450px;
+}
 .section__clients--text {
   margin-top: 285px;
   margin-bottom: 80px;
 }
-
-.slide--1 {
-  margin: 0 auto;
+.section__clients i {
+  font-size: 30px;
+  color: black;
+}
+.section__clients .card-body {
+  height: 300px;
+}
+.section__clients .card-body p {
+  font-size: 17px;
+  line-height: 1.6;
+  font-weight: 400;
+  margin-top: 70px;
+}
+.section__clients .card-body img {
+  padding: 20px 0;
+}
+.section__clients .card-body .h5 {
+  font-size: 17px;
+  line-height: 1.6;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.section__clients .card-body .circle {
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  border-radius: 50%;
 }
 
 .carousel-control-next, .carousel-control-prev {
   border-radius: 50%;
   width: 50px;
   height: 50px;
+  opacity: 1;
+  background: white;
 }
 
 .carousel-control-next, .carousel-control-prev:hover {
   background: #ff5c36;
 }
-
-.carousel-control-prev-icon:hover {
+.carousel-control-next .icon, .carousel-control-prev:hover .icon {
   color: white;
+}
+
+.carousel-dark .carousel-indicators [data-bs-target] {
+  background-color: #ff5c36;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 20px;
+  height: 6px;
 }
 
 @media screen and (max-width: 992px) {
   .section__clients--text {
     margin-top: 100px;
     margin-bottom: 50px;
+  }
+  .section__clients .card-body {
+    height: 400px;
+  }
+  .section__clients .slide--1 {
+    height: 600px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section__clients .card-body {
+    height: 500px;
+  }
+  .section__clients .slide--1 {
+    height: 600px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .section__clients .card-body {
+    height: 400px;
+  }
+  .section__clients .slide--1 {
+    height: 1000px;
   }
 }
 .section__logo {

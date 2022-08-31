@@ -197,28 +197,62 @@ p{
 
 
 .section__clients{
+    .slide--1{
+        margin: 0 auto;
+        height: 450px;
+    }
     &--text{
         margin-top: 285px;
         margin-bottom: 80px;
     }
-}
-.slide--1{
-    margin: 0 auto;
-}
-    .carousel-control-next, .carousel-control-prev{
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
+    i{
+        font-size: 30px;
+        color: black;
     }
-    .carousel-control-next, .carousel-control-prev:hover{
-        background: $bright-orange;
-        // &-icon{
-        //     color: white;
-        // }
+    .card{
+        &-body{
+            height: 300px;
+            p{
+                @include font(17px, 1.6, 400); 
+                margin-top: 70px;
+            }
+            img{
+                padding: 20px 0;
+            }
+            .h5{
+                @include font(17px, 1.6, 600); 
+                margin-bottom: 30px;
+            }
+            .circle{
+                height: 100px;
+                width: 100px;
+                background-color: white;
+                border-radius: 50%;
+            }
+        }
     }
-    .carousel-control-prev-icon:hover{
+}
+
+.carousel-control-next, .carousel-control-prev{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+    background: white;
+    }
+.carousel-control-next, .carousel-control-prev:hover{
+    background: $bright-orange;
+    .icon{
         color: white;
-    }
+        }
+}
+.carousel-dark .carousel-indicators [data-bs-target] {
+    background-color: $bright-orange;
+}
+.carousel-indicators [data-bs-target] {
+    width: 20px;
+    height: 6px;
+}
 
 @media screen and (max-width: 992px) {
     .section__clients{
@@ -226,9 +260,40 @@ p{
             margin-top: 100px;
             margin-bottom: 50px;
         }
+        .card{
+            &-body{
+                height: 400px;
+            }
+        }
+        .slide--1{
+            height: 600px;
+        }
     }
 }
-
+@media screen and (max-width: 768px) {
+    .section__clients{
+        .card{
+            &-body{
+                height: 500px;
+            }
+        }
+        .slide--1{
+            height: 600px;
+        }
+    }
+}
+@media screen and (max-width: 576px) {
+    .section__clients{
+        .card{
+            &-body{
+                height: 400px;
+            }
+        }
+        .slide--1{
+            height: 1000px;
+        }
+    }
+}
 
 
 
