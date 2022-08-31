@@ -202,15 +202,24 @@ p{
         margin-bottom: 80px;
     }
 }
-// .carousel-dark .carousel-control-next-icon, .carousel-dark .carousel-control-prev-icon:hover{
-//     background: $bright-orange;
-// }
-    // .carousel-control-next-icon:hover {
-    //     background-image: $bright-orange;
-    // }
-    .slide--1{
-        margin: 0 auto;
+.slide--1{
+    margin: 0 auto;
+}
+    .carousel-control-next, .carousel-control-prev{
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
     }
+    .carousel-control-next, .carousel-control-prev:hover{
+        background: $bright-orange;
+        // &-icon{
+        //     color: white;
+        // }
+    }
+    .carousel-control-prev-icon:hover{
+        color: white;
+    }
+
 @media screen and (max-width: 992px) {
     .section__clients{
         &--text{
