@@ -1,0 +1,62 @@
+
+
+ /* Homework  */
+   /* btn_1  */
+   .checkbox-1{
+    display: block;
+    width: 90px;
+    height: 35px;
+    background: #4d45c4;
+    border-radius: 25px;
+    /* border: 1px solid black; */
+    box-shadow: 2px 2px 5px #e7e7f1;
+    padding: 2px;
+    position: relative;
+  }
+  .checkbox-1::before{
+    content: '';
+    background-color: #e7e7f1;
+    display: block;
+    width: 33px;
+    height: 33px;
+    border-radius: 25px;
+    position: absolute;
+    right: 3px;
+    bottom: 3px;
+    /* transition: .5s; */
+  }
+  #btn-1:checked ~ .checkbox-1::before{
+    background: #e7e7f1;
+    margin-left: 0;
+    left: 3px;
+  }
+
+  /* btn_2  */
+  .checkbox-2{
+    display: block;
+    width: 90px;
+    height: 35px;
+    background: #e7e7f1;
+    border-radius: 25px;
+    /* border: 1px solid black; */
+    /* box-shadow: 2px 2px 5px #e7e7f1; */
+    padding: 2px;
+    position: relative;
+  }
+  .checkbox-2::before{
+    content: '';
+    background-color: #ffffff;
+    display: block;
+    width: 33px;
+    height: 33px;
+    border-radius: 25px;
+    position: absolute;
+    left: 3px;
+    bottom: 3px;
+    /* transition: .5s; */
+  }
+  #btn-2:checked ~ .checkbox-2::before{
+    background: #ffffff;
+    margin-left: auto;
+    right: 3px;
+  }
