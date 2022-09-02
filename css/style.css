@@ -1,8 +1,173 @@
+*, html, body{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-style: normal;
+    font-family: 'Open Sans', sans-serif;
+}
+.owl-carousel button.owl-dot{
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    border-radius: 100%;
+    margin: 0 10px;
+}
+.owl-carousel button.owl-dot.active{
+    background-color: rgb(255, 0, 200);
+}
+
+.nav {
+    background: #999999;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40%; /* 100% = fullscreen */
+    height: 100vh;
+    transition: transform 0.7s, opacity 1s;
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  
+  .nav.show {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  
+  .list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+  }
+
+  .hamburger {
+    position: relative;
+    margin-left: auto;
+    width: 45px;
+    height: 35px;
+    z-index: 1;
+  }
+  
+  .hamburger span {
+    position: absolute;
+    left: 0;
+    background: #ffffff;
+    width: inherit;
+    height: 5px;
+    transition: transform 0.5s, opacity 0.5s;
+  }
+  
+  .top-line {
+    top: 0px;
+  }
+  
+  .center-line {
+    top: 15px;
+  }
+  
+  .bottom-line {
+    bottom: 0px;
+  }
+  
+  .top-line.active {
+    transform: translateY(15px) rotate(45deg);
+  }
+  
+  .center-line.active {
+    opacity: 0;
+  }
+  
+  .bottom-line.active {
+    transform: translateY(-15px) rotate(-45deg);
+  }
 
 
- /* Homework  */
+  form{
+    margin: 30px;
+  }
+  input{
+    display: none;
+  }
+
+  /* label{
+    display: block;
+    width: 60px;
+    height: 20px;
+    background: #bbb4b4;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px black;
+    padding: 5px;
+  }
+  label::before{
+    content: '';
+    background-color: #c90b0b;
+    display: block;
+    width: 20px;
+    height: 100%;
+    border-radius: 5px;
+    margin-left: 0;
+    transition: .5s;
+  }
+  #bug_1:checked ~ label::before{
+    background: #1b0bc9;
+    margin-left: auto;
+  } */
+
+  /* Если мы хотмм что бы оно более красиво двигалось, у нас сейчас через марджин*/
+  .btn_checkbox{
+    display: block;
+    width: 60px;
+    height: 20px;
+    background: #bbb4b4;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px black;
+    padding: 5px;
+    position: relative;
+    margin-left: 10px;
+  }
+  .btn_checkbox::before{
+    content: '';
+    background-color: #c90b0b;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    position: absolute;
+    left: 5px;
+    transition: .5s;
+  }
+  #bug_1:checked ~ .btn_checkbox::before{
+    background: #1b0bc9;
+    margin-left: auto;
+    left: 45px;
+  } 
+  .wrap{
+    display: flex;
+    align-items: center;
+  }
+
+
+  
+    /* #bug_1:checked ~ label{
+    background: #c90b0b;
+  } */
+  /* #bug_1:checked ~ label::before{
+    content: '';
+    background: #c90b0b;
+    display: block;
+    width: 18px;
+    height: 100%;
+    border-radius: 5px;
+  } */
+
+
+  /* Homework  */
    /* btn_1  */
-   .checkbox-1{
+  .checkbox-1{
     display: block;
     width: 90px;
     height: 35px;
