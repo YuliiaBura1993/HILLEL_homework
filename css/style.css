@@ -4,8 +4,9 @@
     list-style: none;
     text-decoration: none;
     font-style: normal;
-    font-family: 'Open Sans', sans-serif;
+    background: #e7e7f1;
 }
+
 .owl-carousel button.owl-dot{
     width: 20px;
     height: 20px;
@@ -165,7 +166,16 @@
   } */
 
 
-  /* Homework  */
+
+
+
+  /* HOMEWORK */
+  .homework{
+    width: 555px;
+    height: 430px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
    /* btn_1  */
   .checkbox-1{
     display: block;
@@ -174,7 +184,7 @@
     background: #4d45c4;
     border-radius: 25px;
     /* border: 1px solid black; */
-    box-shadow: 2px 2px 5px #e7e7f1;
+    box-shadow: 3px 3px 5px #aba4a4, -3px -3px 5px white;
     padding: 2px;
     position: relative;
   }
@@ -204,7 +214,7 @@
     background: #e7e7f1;
     border-radius: 25px;
     /* border: 1px solid black; */
-    /* box-shadow: 2px 2px 5px #e7e7f1; */
+    box-shadow: 3px 3px 5px #afaaaa, -3px -3px 5px white;
     padding: 2px;
     position: relative;
   }
