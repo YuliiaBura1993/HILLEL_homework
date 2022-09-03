@@ -123,3 +123,53 @@
   box-shadow: inset -3px -3px 5px #afaaaa,
               inset 3px 3px 5px white;
 }
+
+
+/* btn_5 (Arrows) */
+.btn_5{
+  display: flex;
+}
+.button{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin: 20px;
+  border: none;
+  box-shadow: 3px 3px 5px #afaaaa, -3px -3px 5px white;
+}
+.button:hover{
+  background-color: #e8e5e5;
+}
+.button:active{
+  box-shadow: -3px -3px 5px #afaaaa,
+               3px 3px 5px white;
+}
+.button__arrow{
+  background-color: transparent;
+  height: 12px;
+  width: 12px;
+}
+.button__arrow--down{
+  border-bottom: 3px solid #595B60;
+  border-right: 3px solid #595B60;
+  transform: translateY(-25%) rotate(45deg);
+}
+.button__arrow--up {
+  border-left: 3px solid #595B60;
+  border-top: 3px solid #595B60;
+  transform: translateY(25%) rotate(45deg);
+}
+.button__arrow--left {
+  border-bottom: 3px solid #595B60;
+  border-left:3px solid #595B60;
+  transform: translateX(25%) rotate(45deg);
+} 
+.button__arrow--right {
+  border-right: 3px solid #595B60;
+  border-top: 3px solid #595B60;
+  transform: translateX(-25%) rotate(45deg);
+}
+
+
+
