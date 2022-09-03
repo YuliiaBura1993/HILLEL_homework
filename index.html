@@ -1,110 +1,35 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
-    <!-- подключили Owl Carousel 2 -->
-    <link rel="stylesheet" href="./css/owl.carousel.min.css">
-    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
-    <!-- подключили fancyapps -->
-    <link rel="stylesheet" href="./css/fancy.css" class="rel">
     <link rel="stylesheet" href="./css/style.css" class="rel">
-    <title>ДЗ 22. Визуализация формы. Plugins</title>
+    <title>ДЗ 22. Визуализация формы</title>
 </head>
 <body>
-  <header class="header">
-    <h2 class="title">Site Logo</h2>
-    <!-- Side Nav -->
-    <nav id="js-nav" class="nav">
-      <ul class="list">
-        <li><a href="https://www.jqueryscript.net/menu/">Menu</a> 1</li>
-        <li>Menu 2</li>
-        <li>Menu 3</li>
-      </ul>
-    </nav>
-    <!-- Hamburger Button -->
-    <button id="js-hamburger" class="hamburger" type="button">
-      <span id="js-top-line" class="top-line"></span>
-      <span id="js-center-line" class="center-line"></span>
-      <span id="js-bottom-line" class="bottom-line"></span>
-    </button>
-  </header>
-
-
-    <h1 class="mt-12 mb-8 px-6 text-center text-lg md:text-2xl font-semibold">
-        Facebook inspired design, customized background
-      </h1>
-      
-      <div class="flex flex-wrap gap-5 justify-center max-w-5xl mx-auto px-6">
-        <a data-fancybox="gallery" href="https://lipsum.app/id/46/1600x1200">
-          <img class="rounded" src="https://lipsum.app/id/46/200x150" />
-        </a>
-        <a data-fancybox="gallery" href="https://lipsum.app/id/47/1600x1200">
-          <img class="rounded" src="https://lipsum.app/id/47/200x150" />
-        </a>
-        <a data-fancybox="gallery" href="https://lipsum.app/id/51/1600x1200">
-          <img class="rounded" src="https://lipsum.app/id/51/200x150" />
-        </a>
-      </div>
-
-
-
-      <div class="owl-carousel">
-        <img class="rounded" src="https://lipsum.app/id/46/200x150" />
-        <img class="rounded" src="https://lipsum.app/id/47/200x150" />
-        <img class="rounded" src="https://lipsum.app/id/51/200x150" />
-        <img class="rounded" src="https://lipsum.app/id/46/200x150" />
-        <img class="rounded" src="https://lipsum.app/id/47/200x150" />
-        <img class="rounded" src="https://lipsum.app/id/51/200x150" />
-        <img class="rounded" src="https://lipsum.app/id/46/200x150" />
-        <img class="rounded" src="https://lipsum.app/id/47/200x150" />
-        <img class="rounded" src="https://lipsum.app/id/51/200x150" />
-        <img class="rounded" src="https://lipsum.app/id/46/200x150" />
-        <img class="rounded" src="https://lipsum.app/id/47/200x150" />
-        <img class="rounded" src="https://lipsum.app/id/51/200x150" />
-      </div>
-
-
+  <section class="homework">
+      <!-- btn_1 -->
       <form action="#">
-        <div class="wrap">
-          <label for="">Btn 1</label>
-          <div>
-            <input id="bug_1" type="checkbox">
-            <label class="btn_checkbox"  for="bug_1"></label>
-          </div>
+        <div>
+          <input id="btn-1" type="checkbox">
+          <label  class="checkbox-1" for="btn-1"></label>
         </div>
       </form>
+    
+      <!-- btn_2 -->
+      <form action="#">
+        <div>
+          <input id="btn-2" type="checkbox">
+          <label class="checkbox-2" for="btn-2"></label>
+        </div>
+      </form>  
+    
+      <!-- btn_3 (Button) -->
+      <button class="btn_3">Button</button>
 
-
-<!-- Homework -->
-<section class="homework">
-  <!-- btn_1 -->
-  <form action="#">
-    <div>
-      <input id="btn-1" type="checkbox">
-      <label  class="checkbox-1" for="btn-1"></label>
-    </div>
-  </form>
-
-  <!-- btn_2 -->
-  <form action="#">
-    <div>
-      <input id="btn-2" type="checkbox">
-      <label class="checkbox-2" for="btn-2"></label>
-    </div>
-  </form>  
-
-  <!-- btn_3 (Button) -->
-   <button class="btn_3">Button</button>
-</section>
-
-
-    <!-- подключили Owl Carousel 2 -->
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/owl.carousel.min.js"></script>
-    <!-- подключили fancyapps -->
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-    <script src="./js/script.js"></script>
+      <!-- btn_4 (Input) -->
+      <input class="favorite styled" type="button" value="Add to favorites">
+  </section>
 </body>
 </html>
