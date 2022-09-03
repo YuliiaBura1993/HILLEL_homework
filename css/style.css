@@ -13,6 +13,17 @@
   margin: 0 auto;
   margin-top: 50px;
 }
+.btn_1 { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
  /* btn_1  */
 .checkbox-1{
   display: block;
@@ -84,32 +95,31 @@
     font-size: 22px;
     cursor: pointer;
 }
+.btn_3:hover {
+  background-color: #e8e5e5;
+}
+.btn_3:active {
+  box-shadow: -3px -3px 5px #afaaaa,
+               3px 3px 5px white;
+}
 
 
 /* btn_4 (Input) */
-.styled {
-  border: 0;
-  line-height: 2.5;
-  padding: 0 20px;
-  font-size: 1rem;
+.btn_4 {
+  border: none;
   text-align: center;
-  color: #fff;
-  text-shadow: 1px 1px 1px #000;
-  border-radius: 10px;
-  background-color: rgba(220, 0, 0, 1);
-  background-image: linear-gradient(to top left,
-                                    rgba(0, 0, 0, .2),
-                                    rgba(0, 0, 0, .2) 30%,
-                                    rgba(0, 0, 0, 0));
-  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-              inset -2px -2px 3px rgba(0, 0, 0, .6);
+  color: #595B60;
+  padding: 17px 68px;
+  border-radius: 30px;
+  font-size: 22px;
+  /* text-shadow: 1px 1px 1px #000; */
+  box-shadow: inset 3px 3px 5px #afaaaa,
+              inset -3px -3px 5px  white;
 }
-
-.styled:hover {
-  background-color: rgba(255, 0, 0, 1);
+.btn_4:hover {
+  background-color: #e8e5e5;
 }
-
-.styled:active {
-  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-              inset 2px 2px 3px rgba(0, 0, 0, .6);
+.btn_4:active {
+  box-shadow: inset -3px -3px 5px #afaaaa,
+              inset 3px 3px 5px white;
 }
