@@ -211,7 +211,7 @@
     display: block;
     width: 90px;
     height: 35px;
-    background: #e7e7f1;
+    /* background:   #e7e7f1; */
     border-radius: 25px;
     /* border: 1px solid black; */
     box-shadow: 3px 3px 5px #afaaaa, -3px -3px 5px white;
@@ -234,4 +234,16 @@
     background: #ffffff;
     margin-left: auto;
     right: 3px;
+  }
+
+
+  /* btn_3 (Button) */
+  .btn_3{
+      color: #595B60;
+      padding: 17px 63px;
+      border-radius: 30px;
+      border: none;
+      box-shadow: 3px 3px 5px #afaaaa, -3px -3px 5px white;
+      font-size: 22px;
+      cursor: pointer;
   }
