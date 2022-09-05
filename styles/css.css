@@ -271,4 +271,20 @@ a {
 
 .card-group > .card:not(:first-child) .card-img-top {
   border-top-left-radius: 24px;
+}
+
+.section_3 .card {
+  margin: 40px 60px 0 60px;
+  background: #F5F5FA;
+  border-radius: 12px;
+}
+
+.carousel-control-next {
+  right: 50%;
+  bottom: 35%;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  color: #24A3FF;
+  opacity: 10;
 }/*# sourceMappingURL=css.css.map */
