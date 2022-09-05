@@ -273,5 +273,30 @@ a {
 
     &-cards{
         padding: 70px 60px 80px 60px;
+        .card{
+            background: transparent;
+            border: none;
+            padding-bottom: 55px;
+            &-title{
+                @include font(24px, 1.1, 400, #24A3FF);
+                padding: 20px 0 15px 0;
+                padding-right: 28px;
+            }
+            &-text{
+                @include font(18px, 1.4, 400, $white);
+                padding-right: 19px;
+            }
+        }
+        img{
+            width: 22%;
+            background: white;
+            border-radius: 24px;
+        }
     }
+}
+.card-group>.card:not(:last-child) .card-img-top {
+    border-top-right-radius: 24px;
+}
+.card-group>.card:not(:first-child) .card-img-top {
+    border-top-left-radius: 24px;
 }

@@ -238,4 +238,37 @@ a {
 }
 .section_2-cards {
   padding: 70px 60px 80px 60px;
+}
+.section_2-cards .card {
+  background: transparent;
+  border: none;
+  padding-bottom: 55px;
+}
+.section_2-cards .card-title {
+  font-size: 24px;
+  line-height: 1.1;
+  font-weight: 400;
+  color: #24A3FF;
+  padding: 20px 0 15px 0;
+  padding-right: 28px;
+}
+.section_2-cards .card-text {
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 400;
+  color: #ffffff;
+  padding-right: 19px;
+}
+.section_2-cards img {
+  width: 22%;
+  background: white;
+  border-radius: 24px;
+}
+
+.card-group > .card:not(:last-child) .card-img-top {
+  border-top-right-radius: 24px;
+}
+
+.card-group > .card:not(:first-child) .card-img-top {
+  border-top-left-radius: 24px;
 }/*# sourceMappingURL=css.css.map */
