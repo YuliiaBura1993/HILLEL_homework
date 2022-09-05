@@ -42,7 +42,7 @@
     padding: 15px 20px;
     // border-right: 1px solid #f4f4f4;
     text-decoration: none;
-    color: white;
+    @include font(18px, 1.1, 400, white)
   }
   
   .header li a:hover,
