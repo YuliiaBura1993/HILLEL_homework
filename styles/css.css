@@ -164,7 +164,7 @@
   font-size: 42px;
   line-height: 1.1;
   font-weight: 600;
-  color: rgb(179, 179, 186);
+  color: #B3B3BA;
   text-align: right;
   padding: 0 40px 20px 0;
 }
@@ -189,6 +189,7 @@
   background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 .section_1 .div-text1:hover {
   border-right: 3px solid red;
@@ -197,6 +198,7 @@
   background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 .section_1 .div-text2:hover {
   border-right: 3px solid red;
@@ -205,6 +207,7 @@
   background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 .section_1 .div-text3:hover {
   border-right: 3px solid red;
@@ -213,6 +216,7 @@
   background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 .section_1 .div-text4:hover {
   border-right: 3px solid red;
@@ -230,10 +234,11 @@ a {
   font-size: 42px;
   line-height: 1.1;
   font-weight: 600;
-  color: rgb(179, 179, 186);
+  color: #B3B3BA;
   background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
   padding: 100px 60px 0 60px;
 }
 .section_2-cards {
@@ -278,13 +283,61 @@ a {
   background: #F5F5FA;
   border-radius: 12px;
 }
+.section_3 .card-title {
+  font-size: 42px;
+  line-height: 1.1;
+  font-weight: 700;
+  color: #ffffff;
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  padding: 60px 30px 20px 20px;
+}
+.section_3 .card .name {
+  font-size: 18px;
+  line-height: 1.1;
+  font-weight: 400;
+  color: #B3B3BA;
+  padding: 0px 0px 0px 20px;
+}
+.section_3 .card .position {
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 400;
+  color: #B3B3BA;
+  padding: 0px 0px 0px 20px;
+}
 
 .carousel-control-next {
-  right: 50%;
-  bottom: 35%;
+  left: 33%;
+  bottom: 65%;
 }
 
 .carousel-control-next, .carousel-control-prev {
+  opacity: 10;
+  font-size: 14px;
+  line-height: 1.1;
+  font-weight: 700;
   color: #24A3FF;
+  letter-spacing: 1px;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #24A3FF;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+.carousel-indicators {
+  bottom: -40px;
+}
+
+.carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover {
+  color: rgb(145, 27, 166);
+  text-decoration: none;
   opacity: 10;
 }/*# sourceMappingURL=css.css.map */
