@@ -103,11 +103,6 @@
   font-family: "TT Norms";
 }
 
-.gradient {
-  -webkit-mask-image: linear-gradient(to top, transparent 3%, black 48%);
-  mask-image: linear-gradient(to top, transparent 1%, black 60%);
-}
-
 @media (max-width: 870px) {
   .wrap-fb {
     display: none;
@@ -469,6 +464,11 @@
     letter-spacing: 1px;
   }
 }
+.gradient {
+  -webkit-mask-image: linear-gradient(to top, transparent 3%, black 48%);
+  mask-image: linear-gradient(to top, transparent 1%, black 60%);
+}
+
 .section_1 {
   background: linear-gradient(42.01deg, #323264 14.33%, #323264 71.39%, #7A425E 87.53%);
   padding: 105px 0 0 0;
@@ -641,6 +641,22 @@ a {
     display: none;
   }
 }
+.section_2-shadow1 {
+  width: 97%;
+  height: 10px;
+  background: rgb(202, 202, 219);
+  border-radius: 0 0 25px 25px;
+  margin: 0 auto;
+}
+
+.section_2-shadow2 {
+  width: 94%;
+  height: 10px;
+  background: rgb(231, 231, 242);
+  border-radius: 0 0 25px 25px;
+  margin: 0 auto;
+}
+
 .section_2 {
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
   margin-top: -2px;
@@ -1016,4 +1032,78 @@ a {
   .section_5 .big-screen {
     display: none;
   }
+}
+.section_6 {
+  padding: 40px 60px 0 60px;
+  background: #F5F5FA;
+}
+.section_6 a {
+  font-size: 14px;
+  line-height: 1.1;
+  font-weight: 600;
+  color: #24A3FF;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.section_6 h5 {
+  font-size: 42px;
+  line-height: 1.1;
+  font-weight: 600;
+  color: #ffffff;
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  padding: 3px 0 40px 0;
+}
+.section_6 .section_6-cards {
+  display: flex;
+  justify-content: space-between;
+}
+.section_6 .section_6-cards .cards {
+  max-width: 400px;
+}
+.section_6 .section_6-cards .cards img {
+  width: 100%;
+}
+.section_6 .section_6-cards .cards h4 {
+  font-size: 18px;
+  line-height: 1.1;
+  font-weight: 600;
+  color: #24A3FF;
+}
+.section_6 .section_6-cards .cards h6 {
+  font-size: 12px;
+  line-height: 1.1;
+  font-weight: 600;
+  color: #B3B3BA;
+  border-bottom: 4px solid #E6E6F0;
+  padding: 10px 0 20px 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.section_6 .section_6-cards .cards p {
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 400;
+  color: #000000;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.section_6 .section_6-cards .cards .cards-text {
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+}
+.section_6 .section_6-cards .cards .cards-foto {
+  background: #ffffff;
+  border-radius: 8px;
+}
+.section_6 .section_6-cards .cards .cards-foto .cards-foto-inner {
+  padding: 20px;
+}
+.section_6 .section_6-cards .card-1 .cards-foto {
+  margin-top: 40px;
+}
+.section_6 .section_6-cards .card-2 .publications-3 {
+  padding-top: 40px;
 }/*# sourceMappingURL=css.css.map */

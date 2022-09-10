@@ -183,23 +183,8 @@
     font-family: 'TT Norms';
 }
 
-// .gradient::before{
-//     background: linear-gradient(180deg, rgba(50, 50, 100, 0) 16.67%, #323264 100%);
-//     width: 100%;
-//     height: 100px;
-// }
 
-.gradient{
-    // color: red;
-    // -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, 
-    // from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-    // background: linear-gradient(180deg, rgba(50, 50, 100, 0) 16.67%, #323264 100%);
-   
-}
-.gradient {
-    -webkit-mask-image: linear-gradient(to top, transparent 3%, black 48%);
-    mask-image: linear-gradient(to top, transparent 1%, black 60%);
-  }
+
 
 
 
@@ -577,6 +562,10 @@
 //     background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 50%);
 //   }
 
+.gradient {
+    -webkit-mask-image: linear-gradient(to top, transparent 3%, black 48%);
+    mask-image: linear-gradient(to top, transparent 1%, black 60%);
+  }
 
 // SECTION 1 BIG SCREEN
 .section_1{
@@ -773,7 +762,20 @@ a {
 
 
 
-
+.section_2-shadow1{
+    width: 97%;
+    height: 10px;
+    background: rgba(202, 202, 219, 1);
+    border-radius: 0 0 25px 25px;
+    margin: 0 auto;
+}
+.section_2-shadow2{
+    width: 94%;
+    height: 10px;
+    background: rgba(231, 231, 242, 1);
+    border-radius: 0 0 25px 25px;
+    margin: 0 auto;
+}
 .section_2{
     background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
     margin-top: -2px;
@@ -1168,3 +1170,79 @@ a {
     }
 }
 
+
+.section_6{
+    padding: 40px 60px 0 60px;
+    background: $backgraund_gray;
+    a{
+        @include font(14px, 1.1, 600, $blue);
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    h5{
+        @include font(42px, 1.1, 600, $white);
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        // text-fill-color: transparent;
+        padding: 3px 0 40px 0;
+    }
+    .section_6-cards{
+        display: flex;
+        justify-content: space-between;
+        .cards{
+            max-width: 400px;
+            img{
+                width: 100%;
+                // padding-bottom: 20px;
+            }
+            h4{
+                @include font(18px, 1.1, 600, $blue);
+            }
+            h6{
+                @include font(12px, 1.1, 600, $light-gray);
+                border-bottom: 4px solid #E6E6F0;
+                padding: 10px 0 20px 0;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+            }
+            p{
+                @include font(16px, 1.4, 400, $black);
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+
+            .cards-text{
+                padding: 20px;
+                background: $white;
+                border-radius: 8px;
+ 
+            }
+
+            .cards-foto{
+                // margin-top: 40px;
+                background: $white;
+                border-radius: 8px;
+                .cards-foto-inner{
+                    padding: 20px;
+                }
+                // img{
+                //     width: 100%;
+                // }
+            }
+        }
+
+        .card-1{
+            .cards-foto{
+                margin-top: 40px;
+            }
+        }
+
+        .card-2{
+            .publications-3{
+                padding-top: 40px;
+            }
+        }
+    }
+
+}
