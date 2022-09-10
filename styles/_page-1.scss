@@ -1,9 +1,186 @@
+@font-face {
+    font-family: 'TT Norms';
+    src: url('../font/TTNorms-ExtraLight.eot');
+    src: url('../font/TTNorms-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('../font/TTNorms-ExtraLight.woff2') format('woff2'),
+        url('../font/TTNorms-ExtraLight.woff') format('woff'),
+        url('../font/TTNorms-ExtraLight.ttf') format('truetype'),
+        url('../font/TTNorms-ExtraLight.svg#TTNorms-ExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'TT Norms';
+    src: url('../font/TTNorms-Black.eot');
+    src: url('../font/TTNorms-Black.eot?#iefix') format('embedded-opentype'),
+        url('../font/TTNorms-Black.woff2') format('woff2'),
+        url('../font/TTNorms-Black.woff') format('woff'),
+        url('../font/TTNorms-Black.ttf') format('truetype'),
+        url('../font/TTNorms-Black.svg#TTNorms-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+@font-face {
+    font-family: 'TT Norms';
+    src: url('../font/TTNorms-Bold.eot');
+    src: url('../font/TTNorms-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../font/TTNorms-Bold.woff2') format('woff2'),
+        url('../font/TTNorms-Bold.woff') format('woff'),
+        url('../font/TTNorms-Bold.ttf') format('truetype'),
+        url('../font/TTNorms-Bold.svg#TTNorms-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+@font-face {
+    font-family: 'TT Norms';
+    src: url('../font/TTNorms-Black_1.eot');
+    src: url('../font/TTNorms-Black_1.eot?#iefix') format('embedded-opentype'),
+        url('../font/TTNorms-Black_1.woff2') format('woff2'),
+        url('../font/TTNorms-Black_1.woff') format('woff'),
+        url('../font/TTNorms-Black_1.ttf') format('truetype'),
+        url('../font/TTNorms-Black_1.svg#TTNorms-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Norms';
+    src: url('../font/TTNorms-Bold_1.eot');
+    src: url('../font/TTNorms-Bold_1.eot?#iefix') format('embedded-opentype'),
+        url('../font/TTNorms-Bold_1.woff2') format('woff2'),
+        url('../font/TTNorms-Bold_1.woff') format('woff'),
+        url('../font/TTNorms-Bold_1.ttf') format('truetype'),
+        url('../font/TTNorms-Bold_1.svg#TTNorms-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Norms';
+    src: url('../font/TTNorms-Bold_2.eot');
+    src: url('../font/TTNorms-Bold_2.eot?#iefix') format('embedded-opentype'),
+        url('../font/TTNorms-Bold_2.woff2') format('woff2'),
+        url('../font/TTNorms-Bold_2.woff') format('woff'),
+        url('../font/TTNorms-Bold_2.ttf') format('truetype'),
+        url('../font/TTNorms-Bold_2.svg#TTNorms-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+@font-face {
+    font-family: 'TT Norms';
+    src: url('../font/TTNorms-Black_2.eot');
+    src: url('../font/TTNorms-Black_2.eot?#iefix') format('embedded-opentype'),
+        url('../font/TTNorms-Black_2.woff2') format('woff2'),
+        url('../font/TTNorms-Black_2.woff') format('woff'),
+        url('../font/TTNorms-Black_2.ttf') format('truetype'),
+        url('../font/TTNorms-Black_2.svg#TTNorms-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+
+
+@font-face {
+    font-family: 'TT Norms';
+    src: url('../font/TTNorms-ExtraBold.eot');
+    src: url('../font/TTNorms-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../font/TTNorms-ExtraBold.woff2') format('woff2'),
+        url('../font/TTNorms-ExtraBold.woff') format('woff'),
+        url('../font/TTNorms-ExtraBold.ttf') format('truetype'),
+        url('../font/TTNorms-ExtraBold.svg#TTNorms-ExtraBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+@font-face {
+    font-family: 'TT Norms';
+    src: url('../font/TTNorms-ExtraBold_1.eot');
+    src: url('../font/TTNorms-ExtraBold_1.eot?#iefix') format('embedded-opentype'),
+        url('../font/TTNorms-ExtraBold_1.woff2') format('woff2'),
+        url('../font/TTNorms-ExtraBold_1.woff') format('woff'),
+        url('../font/TTNorms-ExtraBold_1.ttf') format('truetype'),
+        url('../font/TTNorms-ExtraBold_1.svg#TTNorms-ExtraBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'TT Norms';
+    src: url('../font/TTNorms-ExtraBold_2.eot');
+    src: url('../font/TTNorms-ExtraBold_2.eot?#iefix') format('embedded-opentype'),
+        url('../font/TTNorms-ExtraBold_2.woff2') format('woff2'),
+        url('../font/TTNorms-ExtraBold_2.woff') format('woff'),
+        url('../font/TTNorms-ExtraBold_2.ttf') format('truetype'),
+        url('../font/TTNorms-ExtraBold_2.svg#TTNorms-ExtraBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'TT Norms';
+    src: url('../font/TTNorms-Heavy_1.eot');
+    src: url('../font/TTNorms-Heavy_1.eot?#iefix') format('embedded-opentype'),
+        url('../font/TTNorms-Heavy_1.woff2') format('woff2'),
+        url('../font/TTNorms-Heavy_1.woff') format('woff'),
+        url('../font/TTNorms-Heavy_1.ttf') format('truetype'),
+        url('../font/TTNorms-Heavy_1.svg#TTNorms-Heavy') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Norms';
+    src: url('../font/TTNorms-Heavy_2.eot');
+    src: url('../font/TTNorms-Heavy_2.eot?#iefix') format('embedded-opentype'),
+        url('../font/TTNorms-Heavy_2.woff2') format('woff2'),
+        url('../font/TTNorms-Heavy_2.woff') format('woff'),
+        url('../font/TTNorms-Heavy_2.ttf') format('truetype'),
+        url('../font/TTNorms-Heavy_2.svg#TTNorms-Heavy') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
 *, html, body{
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
     font-style: normal;
+    font-family: 'TT Norms';
 }
 
 //   МОЙ АДАПТИВ
@@ -39,7 +216,7 @@
             button{
                 background: transparent;
                 border: none;
-                @include font(12px, 1.1, 700, $white);
+                @include font(12px, 1.1, 600, $white);
                 text-align: center;
                 letter-spacing: 1px;
                 padding: 5px;
@@ -65,7 +242,7 @@
             position: absolute;
             top: 17px;
             right: 20px;
-            @include font(16px, 1.2, 700, $light-gray);
+            @include font(16px, 1.2, 600, $light-gray);
             cursor: pointer;
         }
     
@@ -123,7 +300,8 @@
             top: 80px;
             left: 20px;
             a{
-                @include font(15px, 1.1, 400, $white);
+                @include font(10px, 1.1, 600, $white);
+                letter-spacing: 1px;
             }
         }
     
@@ -360,7 +538,8 @@
             top: 57px;
             left: 44px;
             a{
-                @include font(20px, 1.1, 500, $white);
+                @include font(15px, 1.1, 600, $white);
+                letter-spacing: 1px;
             }
         }
       }
@@ -394,7 +573,7 @@
         position: relative;
         
         .biglogo-text{
-            @include font(38px, 1.2, 400, $white);
+            @include font(38px, 1.2, 600, $white);
             max-width: 600px;
             text-align: center;
             margin: 0 auto;
@@ -606,7 +785,7 @@ a {
             border: none;
             padding-bottom: 55px;
             &-title{
-                @include font(24px, 1.1, 400, #24A3FF);
+                @include font(24px, 1.1, 600, #24A3FF);
                 padding: 20px 0 15px 0;
                 padding-right: 28px;
             }
@@ -649,7 +828,7 @@ a {
                 border: none;
                 padding-bottom: 55px;
                 &-title{
-                    @include font(18px, 1.1, 400, #24A3FF);
+                    @include font(18px, 1.1, 600, #24A3FF);
                     padding: 20px 0 15px 0;
                     padding-right: 28px;
                     // margin-top: -50px;
@@ -795,7 +974,6 @@ a {
             height: 60px;
             margin: 0 0 0 10px;
         }
-        
     
     }
 
@@ -847,13 +1025,125 @@ a {
 
 
 .section_4{
+    margin-top: 40px;
+    .card{
+        background: $backgraund_gray;
+        border: 2px solid #FFFFFF;
+        .section_4-title{
+           border: 2px solid #FFFFFF; 
+           h5{
+            @include font(14px, 1.1, 600, $crimson);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 20px 20px 20px 20px;
+            margin-bottom: 0;
+           }
+        }
+        .card-body{
+            .text-1{
+                @include font(24px, 1.1, 600, $dirty-lilac);
+                // padding: 30px 0 15px 0;
+            }
+            .text-2{
+                @include font(18px, 1.2, 400, $light-gray);
+                // padding: 0px 0 10px 0;
+            }
+        }
+    }
+    .card-1{
+        .text-1{
+            padding: 40px 0 20px 0;
+        }
+    }
+    .card-2, .card-3{
+        .text-1{
+            padding: 100px 0 20px 0;
+        }
+    }
     .card-4{
         max-width: 320px;
+        .text-1{
+            padding: 20px 0 20px 0;
+        }
     }
     .card-5{
         max-width: 450px;
+        .text-1{
+            padding: 75px 0 20px 0;
+        }
     }
     .card-6{
         max-width: 550px;
+        .text-1{
+            padding: 75px 0 20px 0;
+        }
     }
 }
+
+@media (max-width: 992px) {
+
+}
+
+
+
+.section_5{
+    h5{
+        @include font(14px, 1.1, 700, $dark-blue);
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 30px 0;
+        margin: 0;
+    }
+    .big-screen{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        a{
+            img{
+                max-width: 330px;
+            }
+        }
+    }
+    .small-screen{
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .section_5{
+        .big-screen{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            a{
+                img{
+                    max-width: 300px;
+                }
+            }
+        }
+        .small-screen{
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .section_5{
+        .small-screen{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            a{
+                // width: 50%;
+                img{
+                    width: 180px;
+                }
+            }
+        }
+        .big-screen{
+            display: none;
+        }
+    }
+}
+
