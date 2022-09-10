@@ -190,11 +190,17 @@
 // }
 
 .gradient{
-    color: red;
-    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, 
-    from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    // color: red;
+    // -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, 
+    // from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
     // background: linear-gradient(180deg, rgba(50, 50, 100, 0) 16.67%, #323264 100%);
+   
 }
+.gradient {
+    -webkit-mask-image: linear-gradient(to top, transparent 3%, black 48%);
+    mask-image: linear-gradient(to top, transparent 1%, black 60%);
+  }
+
 
 
 //   МОЙ АДАПТИВ
@@ -618,7 +624,8 @@
         width: 42px;
         height: 42px;
         border-radius: 50%;
-        margin-top: -20px;
+        margin-top: -70px;
+        margin-bottom: 70px;
         align-self: center;
         z-index: 10;
     }
@@ -772,7 +779,7 @@ a {
     margin-top: -2px;
     padding-top: 80px;
     .services{
-        @include font(14px, 1.1, 400, $white);
+        @include font(14px, 1.1, 600, $white);
         letter-spacing: 1px;
         text-transform: uppercase;
         opacity: 0.5;

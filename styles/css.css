@@ -104,8 +104,8 @@
 }
 
 .gradient {
-  color: red;
-  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 0, 0)), to(rgba(0, 0, 0, 0)));
+  -webkit-mask-image: linear-gradient(to top, transparent 3%, black 48%);
+  mask-image: linear-gradient(to top, transparent 1%, black 60%);
 }
 
 @media (max-width: 870px) {
@@ -512,7 +512,8 @@
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  margin-top: -20px;
+  margin-top: -70px;
+  margin-bottom: 70px;
   align-self: center;
   z-index: 10;
 }
@@ -648,7 +649,7 @@ a {
 .section_2 .services {
   font-size: 14px;
   line-height: 1.1;
-  font-weight: 400;
+  font-weight: 600;
   color: #ffffff;
   letter-spacing: 1px;
   text-transform: uppercase;
