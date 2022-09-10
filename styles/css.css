@@ -103,6 +103,11 @@
   font-family: "TT Norms";
 }
 
+.gradient {
+  color: red;
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 0, 0)), to(rgba(0, 0, 0, 0)));
+}
+
 @media (max-width: 870px) {
   .wrap-fb {
     display: none;
