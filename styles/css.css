@@ -984,6 +984,47 @@ a {
   padding: 75px 0 20px 0;
 }
 
+@media (max-width: 768px) {
+  .section_4 {
+    margin-top: 30px;
+  }
+  .section_4 .card .card-body .text-1 {
+    font-size: 18px;
+    line-height: 1.1;
+    font-weight: 600;
+    color: #686887;
+  }
+  .section_4 .card .card-body .text-2 {
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #B3B3BA;
+  }
+  .section_4 .card-1 .text-1 {
+    padding: 20px 20px 20px 0px;
+  }
+  .section_4 .card-2 .text-1, .section_4 .card-3 .text-1 {
+    padding: 20px 20px 20px 0px;
+  }
+  .section_4 .card-4 {
+    max-width: 100%;
+  }
+  .section_4 .card-4 .text-1 {
+    padding: 20px 20px 20px 0px;
+  }
+  .section_4 .card-5 {
+    max-width: 100%;
+  }
+  .section_4 .card-5 .text-1 {
+    padding: 20px 20px 20px 0px;
+  }
+  .section_4 .card-6 {
+    max-width: 100%;
+  }
+  .section_4 .card-6 .text-1 {
+    padding: 20px 20px 20px 0px;
+  }
+}
 .section_5 h5 {
   font-size: 14px;
   line-height: 1.1;
@@ -1034,8 +1075,11 @@ a {
   }
 }
 .section_6 {
-  padding: 40px 60px 0 60px;
+  padding: 40px 60px;
   background: #F5F5FA;
+}
+.section_6 .small-screen {
+  display: none;
 }
 .section_6 a {
   font-size: 14px;
@@ -1066,13 +1110,18 @@ a {
 .section_6 .section_6-cards .cards img {
   width: 100%;
 }
-.section_6 .section_6-cards .cards h4 {
+.section_6 .section_6-cards .cards .cards-text {
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+}
+.section_6 .section_6-cards .cards .cards-text h4 {
   font-size: 18px;
   line-height: 1.1;
   font-weight: 600;
   color: #24A3FF;
 }
-.section_6 .section_6-cards .cards h6 {
+.section_6 .section_6-cards .cards .cards-text h6 {
   font-size: 12px;
   line-height: 1.1;
   font-weight: 600;
@@ -1082,28 +1131,103 @@ a {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-.section_6 .section_6-cards .cards p {
+.section_6 .section_6-cards .cards .cards-text p {
   font-size: 16px;
   line-height: 1.4;
   font-weight: 400;
   color: #000000;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-bottom: 0;
 }
-.section_6 .section_6-cards .cards .cards-text {
-  padding: 20px;
-  background: #ffffff;
-  border-radius: 8px;
+.section_6 .section_6-cards .card-1 {
+  margin: 0 10px 0 0;
 }
-.section_6 .section_6-cards .cards .cards-foto {
-  background: #ffffff;
-  border-radius: 8px;
-}
-.section_6 .section_6-cards .cards .cards-foto .cards-foto-inner {
-  padding: 20px;
-}
-.section_6 .section_6-cards .card-1 .cards-foto {
+.section_6 .section_6-cards .card-1 .publications-1 {
   margin-top: 40px;
 }
+.section_6 .section_6-cards .card-2 {
+  margin: 0 10px 0 0;
+}
 .section_6 .section_6-cards .card-2 .publications-3 {
-  padding-top: 40px;
+  margin-top: 40px;
+}
+.section_6 .section_6-cards .card-3 .publications-5 {
+  margin-top: 20px;
+}
+.section_6 .section_6-btn {
+  font-size: 14px;
+  line-height: 1.1;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+  background: #24A3FF;
+  padding: 0px 0px;
+  border-radius: 12px;
+  border: none;
+  width: 250px;
+  height: 50px;
+  margin: 0 auto;
+  display: block;
+  margin-top: -65px;
+  -webkit-mask-image: linear-gradient(to top, transparent 0%, black 0%);
+  mask-image: linear-gradient(to top, transparent 1%, black 60%);
+}
+.section_6 .btn-shadow {
+  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+  width: 250px;
+  height: 50px;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+.gradien-2 {
+  -webkit-mask-image: linear-gradient(to top, transparent 3%, black 25%);
+  mask-image: linear-gradient(to top, transparent 1%, black 60%);
+}
+
+@media (max-width: 768px) {
+  .section_6 {
+    padding: 20px 20px 40px 20px;
+  }
+  .section_6 .section_6-btn {
+    margin-top: 40px;
+  }
+  .section_6 h5 {
+    font-size: 32px;
+    line-height: 1.1;
+    font-weight: 600;
+    color: #ffffff;
+    padding: 3px 0 20px 0;
+  }
+  .section_6 .section_6-cards {
+    display: none;
+  }
+  .section_6 .small-screen {
+    display: block;
+  }
+  .section_6 .small-screen .cards {
+    width: 100%;
+    background: #ffffff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  .section_6 .small-screen h4 {
+    font-size: 18px;
+    line-height: 1.1;
+    font-weight: 600;
+    color: #24A3FF;
+    padding: 20px 20px 10px 20px;
+  }
+  .section_6 .small-screen h6 {
+    font-size: 12px;
+    line-height: 1.1;
+    font-weight: 600;
+    color: #B3B3BA;
+    padding: 0px 20px 10px 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .section_6 .small-screen img {
+    width: 100%;
+  }
 }/*# sourceMappingURL=css.css.map */

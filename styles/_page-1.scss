@@ -1103,8 +1103,63 @@ a {
     }
 }
 
-@media (max-width: 992px) {
-
+@media (max-width: 768px) {
+    .section_4{
+        margin-top: 30px;
+        .card{
+            // width: 100%;
+            // background: $backgraund_gray;
+            // border: 2px solid #FFFFFF;
+            // .section_4-title{
+            //    border: 2px solid #FFFFFF; 
+            //    h5{
+            //     @include font(14px, 1.1, 600, $crimson);
+            //     letter-spacing: 1px;
+            //     text-transform: uppercase;
+            //     padding: 20px 20px 20px 20px;
+            //     margin-bottom: 0;
+            //    }
+            // }
+            .card-body{
+                .text-1{
+                    @include font(18px, 1.1, 600, $dirty-lilac);
+                    // padding: 30px 0 15px 0;
+                }
+                .text-2{
+                    @include font(18px, 1.2, 400, $light-gray);
+                    // padding: 0px 0 10px 0;
+                }
+            }
+        }
+        .card-1{
+            .text-1{
+                padding: 20px 20px 20px 0px;
+            }
+        }
+        .card-2, .card-3{
+            .text-1{
+                padding: 20px 20px 20px 0px;
+            }
+        }
+        .card-4{
+            max-width: 100%;
+            .text-1{
+                padding: 20px 20px 20px 0px;
+            }
+        }
+        .card-5{
+            max-width: 100%;
+            .text-1{
+                padding: 20px 20px 20px 0px;
+            }
+        }
+        .card-6{
+            max-width: 100%;
+            .text-1{
+                padding: 20px 20px 20px 0px;
+            }
+        }
+    }
 }
 
 
@@ -1172,7 +1227,10 @@ a {
 
 
 .section_6{
-    padding: 40px 60px 0 60px;
+    .small-screen{
+        display: none;
+    }
+    padding: 40px 60px;
     background: $backgraund_gray;
     a{
         @include font(14px, 1.1, 600, $blue);
@@ -1191,58 +1249,129 @@ a {
     .section_6-cards{
         display: flex;
         justify-content: space-between;
+    
         .cards{
             max-width: 400px;
             img{
                 width: 100%;
                 // padding-bottom: 20px;
             }
-            h4{
-                @include font(18px, 1.1, 600, $blue);
-            }
-            h6{
-                @include font(12px, 1.1, 600, $light-gray);
-                border-bottom: 4px solid #E6E6F0;
-                padding: 10px 0 20px 0;
-                letter-spacing: 1px;
-                text-transform: uppercase;
-            }
-            p{
-                @include font(16px, 1.4, 400, $black);
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            }
+        
 
             .cards-text{
                 padding: 20px;
                 background: $white;
                 border-radius: 8px;
+                h4{
+                    @include font(18px, 1.1, 600, $blue);
+                }
+                h6{
+                    @include font(12px, 1.1, 600, $light-gray);
+                    border-bottom: 4px solid #E6E6F0;
+                    padding: 10px 0 20px 0;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                }
+                p{
+                    @include font(16px, 1.4, 400, $black);
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    margin-bottom: 0;
+                }
  
             }
 
-            .cards-foto{
-                // margin-top: 40px;
-                background: $white;
-                border-radius: 8px;
-                .cards-foto-inner{
-                    padding: 20px;
-                }
-                // img{
-                //     width: 100%;
-                // }
-            }
+         
         }
 
         .card-1{
-            .cards-foto{
+            margin: 0 10px 0 0;
+            .publications-1{
                 margin-top: 40px;
             }
         }
 
         .card-2{
+            margin: 0 10px 0 0;
             .publications-3{
-                padding-top: 40px;
+                margin-top: 40px;
+            }
+        }
+
+        .card-3{
+            .publications-5{
+                margin-top: 20px;
             }
         }
     }
 
+    .section_6-btn{
+        @include font(14px, 1.1, 600, $white);
+        text-align: center;
+        background: $blue;
+        padding: 0px 0px;
+       
+        border-radius: 12px;
+        border: none;
+        width: 250px;
+        height: 50px;
+        margin: 0 auto;
+        display: block;
+        margin-top: -65px;
+        -webkit-mask-image: linear-gradient(to top, transparent 0%, black 0%);
+        mask-image: linear-gradient(to top, transparent 1%, black 60%);
+       
+    }
+    .btn-shadow{
+        box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+        width: 250px;
+        height: 50px;
+        margin: 0 auto;
+        border-radius: 12px;
+    }
+
+}
+
+.gradien-2{
+    -webkit-mask-image: linear-gradient(to top, transparent 3%, black 25%);
+    mask-image: linear-gradient(to top, transparent 1%, black 60%);
+}
+
+@media (max-width: 768px) {
+    .section_6{
+        padding: 20px 20px 40px 20px;
+        .section_6-btn{
+            margin-top: 40px;
+        }
+       
+        h5{
+            @include font(32px, 1.1, 600, $white);
+            padding: 3px 0 20px 0;
+        }
+        .section_6-cards{
+            display: none;
+        }
+
+        .small-screen{
+            display: block;
+            .cards{
+                width: 100%;
+                background: $white;
+                border-radius: 8px;
+                margin-bottom: 20px;
+            }
+            h4{
+                @include font(18px, 1.1, 600, $blue);
+                padding: 20px 20px 10px 20px;
+            }
+            h6{
+                @include font(12px, 1.1, 600, $light-gray);
+                padding: 0px 20px 10px 20px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+            }
+            img{
+                width: 100%;
+            }
+        }
+    }
 }
