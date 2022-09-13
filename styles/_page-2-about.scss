@@ -463,13 +463,7 @@
 
 
 
-.team-background{
-    margin: 0 auto;
-    background-image: url(../img/page-2/team-background.png);
 
-    width: 1440px;
-    height: 438px;
-}
 
 
     .team-background{
@@ -498,25 +492,69 @@
         margin: 0 auto;
         background-image: url(../img/page-2/team-small.png);
         width: 375px;
-        padding: 100px 0;
+        padding: 150px 0;
     }
-
 }
+@media (max-width: 375px) {
+    .team-background{
+        width: 260px;
+    }
+}
+
 
 .page-2_section-2{
     display: flex;
     justify-content: center;
+    padding: 80px 60px 90px 60px;
     p{
         @include font(21px, 1.2, 400, $black);
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         max-width: 640px;
+        margin: 0 40px 15px 0;
     }
     h4{
         @include font(42px, 1.1, 600, $white);
-        padding: 0 0 20px 0;
+        // padding: 0 0 20px 0;
         max-width: 414px;
     }
-
-    
 }
 
+@media (max-width: 1440px) {
+    .page-2_section-2{
+        // display: flex;
+        // justify-content: center;
+        padding: 40px 60px 40px 60px;
+        p{
+            @include font(18px, 1.2, 400, $black);
+            margin: 0 20px 15px 0;
+        }
+        h4{
+            @include font(32px, 1.1, 600, $white);
+        }
+    }
+}
+@media (max-width: 768px) {
+    .page-2_section-2{
+        display: flex;
+        // justify-content: center;
+        flex-direction: column;
+        padding: 20px 20px 40px 20px;
+        p{
+            margin: 0 0px 10px 0;
+        }
+        h4{
+            padding: 20px 0 0px 0;
+        }
+    }
+}
+
+
+.page-2_section-3{
+    // .img-logo{
+    //     display: flex;
+    //     justify-content: space-around;
+    //     img{
+    //         width: 300px;
+    //     }
+    // }
+}

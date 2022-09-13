@@ -1841,13 +1841,6 @@ a {
 .team-background {
   margin: 0 auto;
   background-image: url(../img/page-2/team-background.png);
-  width: 1440px;
-  height: 438px;
-}
-
-.team-background {
-  margin: 0 auto;
-  background-image: url(../img/page-2/team-background.png);
   padding: 200px 0px;
   background-repeat: no-repeat;
   width: 1440px;
@@ -1865,12 +1858,18 @@ a {
     margin: 0 auto;
     background-image: url(../img/page-2/team-small.png);
     width: 375px;
-    padding: 100px 0;
+    padding: 150px 0;
+  }
+}
+@media (max-width: 375px) {
+  .team-background {
+    width: 260px;
   }
 }
 .page-2_section-2 {
   display: flex;
   justify-content: center;
+  padding: 80px 60px 90px 60px;
 }
 .page-2_section-2 p {
   font-size: 21px;
@@ -1879,12 +1878,44 @@ a {
   color: #000000;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   max-width: 640px;
+  margin: 0 40px 15px 0;
 }
 .page-2_section-2 h4 {
   font-size: 42px;
   line-height: 1.1;
   font-weight: 600;
   color: #ffffff;
-  padding: 0 0 20px 0;
   max-width: 414px;
+}
+
+@media (max-width: 1440px) {
+  .page-2_section-2 {
+    padding: 40px 60px 40px 60px;
+  }
+  .page-2_section-2 p {
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #000000;
+    margin: 0 20px 15px 0;
+  }
+  .page-2_section-2 h4 {
+    font-size: 32px;
+    line-height: 1.1;
+    font-weight: 600;
+    color: #ffffff;
+  }
+}
+@media (max-width: 768px) {
+  .page-2_section-2 {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 40px 20px;
+  }
+  .page-2_section-2 p {
+    margin: 0 0px 10px 0;
+  }
+  .page-2_section-2 h4 {
+    padding: 20px 0 0px 0;
+  }
 }/*# sourceMappingURL=css.css.map */
