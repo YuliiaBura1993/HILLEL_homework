@@ -1,0 +1,15 @@
+.white{
+    color: $white;
+}
+.bread-crumbs{
+    @include font(38px, 1.1, 400, $white);
+}
+.header_backgr-page-3{
+   background: linear-gradient(228.57deg, #323264 2.93%, #323264 102.17%, #643E72 103.46%);;
+}
+.body_backgr-page-3{
+    background: linear-gradient(228.57deg, #323264 11.93%, #323264 71.17%, #643E72 87.46%);
+}
+.padding_top-190{
+    padding: 190px 0 0 0;
+}

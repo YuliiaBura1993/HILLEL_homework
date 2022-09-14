@@ -1366,6 +1366,14 @@ a {
     text-align: center;
   }
 }
+.pink-gradient {
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
 @media (max-width: 870px) {
   .page-2 .wrap-fb {
     display: none;
@@ -1732,14 +1740,6 @@ a {
   }
 }
 
-.pink-gradient {
-  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-}
-
 .page-2_section-1 {
   display: flex;
   justify-content: center;
@@ -1918,4 +1918,112 @@ a {
   .page-2_section-2 h4 {
     padding: 20px 0 0px 0;
   }
+}
+.page-2_section-3 {
+  background: #F5F5FA;
+  padding: 40px 0;
+}
+.page-2_section-3 .wrap {
+  display: flex;
+  flex-direction: column;
+}
+.page-2_section-3 .wrap .text-slider {
+  font-size: 14px;
+  line-height: 1.1;
+  font-weight: 600;
+  color: #323264;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 30px 0;
+}
+.page-2_section-3 .wrap .img-slider {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 0 30px 0;
+}
+.page-2_section-3 .carousel-indicators {
+  background: #F5F5FA;
+  bottom: -45px;
+}
+.page-2_section-3 .big-slide {
+  display: flex;
+}
+.page-2_section-3 .small-slide {
+  display: none;
+}
+
+@media (max-width: 1300px) {
+  .page-2_section-3 .big-slide img {
+    width: 157px;
+  }
+}
+@media (max-width: 873px) {
+  .page-2_section-3 .big-slide {
+    display: none;
+  }
+  .page-2_section-3 .small-slide {
+    display: flex;
+  }
+  .page-2_section-3 .small-slide img {
+    width: 157px;
+  }
+}
+.white {
+  color: #ffffff;
+}
+
+.bread-crumbs {
+  font-size: 38px;
+  line-height: 1.1;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.header_backgr-page-3 {
+  background: linear-gradient(228.57deg, #323264 2.93%, #323264 102.17%, #643E72 103.46%);
+}
+
+.body_backgr-page-3 {
+  background: linear-gradient(228.57deg, #323264 11.93%, #323264 71.17%, #643E72 87.46%);
+}
+
+.padding_top-190 {
+  padding: 190px 0 0 0;
+}
+
+.backgr-transparent {
+  background: transparent;
+}
+
+.page-4-section-1 {
+  background: linear-gradient(228.57deg, #323264 11.93%, #323264 103.17%, #643E72 100.46%);
+}
+.page-4-section-1 .backg-keyboard {
+  margin: 0 auto;
+  width: 1440px;
+  padding: 160px 0;
+  background-image: url(../img/page-4/backg-services-2.png);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.page-4-section-1 .backg-keyboard img {
+  width: 92px;
+}
+.page-4-section-1 .backg-keyboard h4 {
+  font-size: 42px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #B3B3BA;
+}
+.page-4-section-1 .backg-keyboard p {
+  font-size: 21px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #ffffff;
+  max-width: 860px;
+  text-align: center;
 }/*# sourceMappingURL=css.css.map */

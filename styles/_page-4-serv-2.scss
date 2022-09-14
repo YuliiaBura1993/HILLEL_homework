@@ -1,0 +1,33 @@
+.backgr-transparent{
+    background: transparent;
+}
+
+
+.page-4-section-1{
+    background: linear-gradient(228.57deg, #323264 11.93%, #323264 103.17%, #643E72 100.46%);
+    
+    .backg-keyboard{
+        margin: 0 auto;
+        width: 1440px;
+        padding: 160px 0;
+        background-image: url(../img/page-4/backg-services-2.png);
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img{
+            // padding: 150px 0 0 0;
+           width: 92px;
+        }
+        h4{
+            @include font(42px, 1.2, 600, $light-gray);
+        }
+        p{
+            @include font(21px, 1.2, 400, $white);
+            max-width: 860px;
+            text-align: center;
+        }
+    }
+}
+

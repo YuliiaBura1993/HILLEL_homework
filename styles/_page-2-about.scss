@@ -1,3 +1,11 @@
+.pink-gradient{
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
 // SMALL SCREEN
 .page-2{
     @media (max-width: 870px) {
@@ -360,13 +368,7 @@
 }
 
 
-.pink-gradient{
-    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-}
+
 
 .page-2_section-1{
     display: flex;
@@ -550,11 +552,202 @@
 
 
 .page-2_section-3{
-    // .img-logo{
-    //     display: flex;
-    //     justify-content: space-around;
-    //     img{
-    //         width: 300px;
-    //     }
-    // }
+    background: $backgraund_gray;
+    padding: 40px 0;
+    .wrap{
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        .text-slider{
+            @include font(14px, 1.1, 600, $dark-blue);
+            text-align: center;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 30px 0;
+        }
+        .img-slider{
+            display: flex;
+            justify-content: space-around;
+            // flex-wrap: wrap;
+            padding: 0 0 30px 0;
+        }
+    }
+    .carousel-indicators{
+        background: $backgraund_gray;
+        // padding: 30px 0;
+        bottom: -45px;
+    }
+
+
+    .big-slide{
+        display: flex;
+    }
+    .small-slide{
+        display: none;
+    }
 }
+
+@media (max-width: 1300px){
+    .page-2_section-3{
+        .big-slide{
+            img{
+                width: 157px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 873px){
+    .page-2_section-3{
+        .big-slide{
+            display: none;
+        }
+        .small-slide{
+            display: flex;
+            img{
+                width: 157px;
+            }
+        }
+    }
+ 
+}
+
+
+
+// .page-2-footer{
+//     background: $backgraund_gray;
+//     .footer-inner{
+//         display: flex;
+//         justify-content: space-between;
+//         border-top: 4px solid #E6E6F0;
+//         margin: 0 60px;
+//         position: relative;
+//         .footer-inner-left{
+//             display: flex;
+//             flex-direction: column;
+//             position: absolute;
+//             left: 10px;
+//             .left-up{
+//                 display: flex;
+//                 align-items: center;
+//                 margin: 30px 0;
+//                 .small-circle{
+//                     position: absolute;
+//                     left: 224px;
+//                     top: 37px;
+//                 }
+//             }
+
+//             .left-down{
+//                 display: flex;
+//                 align-items: center;
+//                 margin: 0 0 50px 0;
+//             }
+
+//             .adress{
+//                 @include font(16px, 1.1, 600, $dark-blue);
+//                 margin-bottom: 0;
+//             }
+//             .telefon{
+//                 @include font(16px, 1.1, 600, $dark-blue);
+//                 margin-bottom: 0;
+//             }
+//             .small-circle{
+//                 margin: 0 10px 0 10px;
+//                 background: $light-gray;
+//                 width: 6px;
+//                 height: 6px;
+//                 border-radius: 50%;
+//             }
+//             .map{
+//                 @include font(12px, 1.1, 600, $blue);
+//                 letter-spacing: 1px;
+//                 text-transform: uppercase;
+//                 margin-bottom: 0px;
+//                 margin-left: 30px;
+//                 padding-top: 3px;   
+//             }
+//             .email{
+//                 @include font(16px, 1.1, 600, $blue);
+//                 margin-bottom: 0px;
+//             }
+//         }
+
+//         .footer-inner-right{
+//             display: flex;
+//             align-items: flex-start;
+//             align-content: flex-end;
+//             position: absolute;
+//             right: 10px;
+//             .company{
+//                 @include font(16px, 1.1, 400, $light-gray);
+//                 margin: 30px 0px 0 0;
+//             }
+//         }
+//     }
+// }
+
+// @media (max-width: 873px) {
+//     .page-2-footer{
+//         background: $backgraund_gray;
+//         .footer-inner{
+//             display: flex;
+//             flex-direction: column;
+//             justify-content: center;
+        
+//             margin: 0 20px;
+//             .footer-inner-left{
+//                 display: flex;
+//                 flex-direction: column;
+//                 justify-content: center;
+//                 .left-up{
+//                     display: flex;
+//                     align-items: center;
+//                     flex-direction: column;
+//                     margin: 20px 0 0 0;
+//                 }
+    
+//                 .left-down{
+//                     display: flex;
+//                     align-items: center;
+//                     flex-direction: column;
+//                     margin: 0 0 20px 0;
+//                 }
+    
+//                 .adress{
+        
+//                     margin-bottom: 10px;
+//                 }
+//                 .telefon{
+       
+//                     margin-bottom: 20px;
+//                 }
+//                 .small-circle{
+//                     display: none;
+//                 }
+//                 .map{
+     
+//                     margin-bottom: 20px;
+//                 }
+//                 .fb-blue{
+//                     margin-bottom: 20px;
+//                 }
+//                 .email{
+//                     @include font(16px, 1.1, 600, $blue);
+//                     margin-bottom: 0px;
+//                 }
+//             }
+    
+//             .footer-inner-right{
+//                 display: flex;
+//                 justify-content: center;
+//                 .company{
+    
+//                     margin: 0px 20px 100px 20px;
+//                     text-align: center;
+//                 }
+//             }
+//         }
+//     }
+// }
