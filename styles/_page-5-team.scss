@@ -1,0 +1,164 @@
+.section-1_page-5{
+    padding: 200px 60px 60px 60px;
+    display: flex;
+    flex-direction: column;
+    h4{
+        @include font(42px, 1.1, 600, $white);
+        max-width: 864px;
+        margin: 0 auto;
+        display: block;
+        padding: 0 0 80px 0;
+    }
+
+    .cards_page-5{
+        .wrap_page-5{
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .card-person{
+            margin: 0 10px 40px 10px;
+            img{
+                max-width: 410px;
+            }
+            .card-person-inner{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .card-person-text{
+                    .name{
+                        @include font(18px, 1.1, 600, $dark-blue);
+                        padding: 20px 0 5px 0;
+                    }
+                    .position{
+                        @include font(16px, 1.2, 400, $light-gray);
+                    }
+                }
+
+                p{
+                    margin: 0;
+                }
+                .link-btn{
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 50%;
+                    background: #F5F5FA;
+                    a{
+                        img{
+                            margin: 0 auto;
+                            display: block;
+                            padding-top: 25%;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        // ПОЧЕМУ 1я КАРТОЧКА НЕ ПРИЛЕГАЕТ К ЛЕВОЙ СТОРОНЕ???
+        .card-1{
+            align-content: flex-start;
+        }
+    }
+}
+
+@media (max-width: 1420px) {
+    .section-1_page-5{
+        padding: 180px 20px 60px 20px;
+        .cards_page-5{
+            .card-person{
+                img{
+                    max-width: 280px;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 945px) {
+    .section-1_page-5{
+        padding: 150px 20px 40px 20px;
+        display: flex;
+        flex-direction: column;
+        h4{
+            @include font(32px, 1.1, 600, $white);
+            padding: 0 0 20px 0;
+        }
+    
+        .cards_page-5{
+            .wrap_page-5{
+                display: flex;
+                flex-direction: column;
+            }
+            .card-person{
+                margin: 0 10px 40px 10px;
+                display: flex;
+                align-items: flex-end;
+                img{
+                    max-width: 250px;
+                }
+                .card-person-inner{
+                    display: flex;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    padding: 0 0 0 20px;   
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .section-1_page-5{
+        padding: 130px 20px 40px 20px;
+        // display: flex;
+        // flex-direction: column;
+     
+    
+        .cards_page-5{
+            .wrap_page-5{
+                // display: flex;
+                // flex-direction: column;
+            }
+            .card-person{
+                // margin: 0 10px 40px 10px;
+                // display: flex;
+                // align-items: flex-end;
+                img{
+                    max-width: 150px;
+                }
+            }
+        }
+    }
+}
+
+
+
+// ALEX-TEAM
+
+.section-2_page-5{
+    padding: 200px 60px 80px 60px;
+    display: flex;
+    justify-content: center;
+    .part-right{
+        padding: 0 0 0 40px;
+        h4{
+            padding: 20px 0 0 0;
+        }
+        .network{
+            .dot {
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: #B3B3BA;
+            }
+        }
+    }
+
+}
+
+
+
+
