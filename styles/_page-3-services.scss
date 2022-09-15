@@ -4,6 +4,12 @@
 .bread-crumbs{
     @include font(38px, 1.1, 400, $white);
 }
+@media (max-width: 871px) {
+    .bread-crumbs{
+        @include font(19px, 1.1, 400, $white);
+    }
+}
+
 .header_backgr-page-3{
    background: linear-gradient(228.57deg, #323264 2.93%, #323264 102.17%, #643E72 103.46%);;
 }
