@@ -78,11 +78,12 @@
     // z-index: 10;
   }
 
+
+
+
+//   PUBLICATIONS-2
   .publications-2{
     padding: 175px 0px 0 0px;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
     width: 906px;
     margin: 0 auto;
     img{
@@ -101,7 +102,11 @@
     .gray-top-border{
         border-top: 4px solid #EDEDF7;
         padding: 40px 0px 0 0px;
-        // margin: 0 20px 0 20px;
+        margin: 0 20px;
+    }
+    .gray-bottom-border{
+        border-bottom: 4px solid #EDEDF7;
+        padding: 0 0 40px 0;
         margin: 0 20px;
     }
     p{
@@ -113,15 +118,6 @@
         @include font(41px, 1.2, 600, $dark-blue);
         padding: 40px 0 40px 0;
     }
-    // ol{
-    //     list-style-type: lower-latin;
-    // }
-    // li {
-    //     color: red; /* Цвет маркеров */
-    // }
-    // li span {
-    //     color: navy; /* Цвет текста */
-    // }
     h6{
         @include font(24px, 1.1, 600, $dark-blue);
         padding: 0 20px 15px 20px;
@@ -134,4 +130,23 @@
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         padding: 0 20px 0 0;
     }
+    .img-2{
+        margin: 0 auto;
+        display: block;
+        padding: 10px 0 0px 0;
+    }
+    .img-description{
+        @include font(16px, 1.2, 400, $light-gray);
+        text-align: center;
+    }
+    .h6{
+        padding: 20px 0 10px 20px;
+    }
+    .network-btn{
+        img{
+            padding: 20px 0 40px 20px;
+        }
+    }
   }
+
+  @media (max-width: 992px) {}
