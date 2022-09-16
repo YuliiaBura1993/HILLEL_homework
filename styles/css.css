@@ -2442,5 +2442,150 @@ a {
   }
 }
 .padding-175 {
-  padding: 175px 60px 0 60px;
+  padding: 175px 60px 40px 60px;
+}
+
+.margin-btn {
+  margin-top: 80px !important;
+}
+
+.margin-top-40 {
+  margin-top: 40px;
+}
+
+.margin-top-20 {
+  margin-top: 20px;
+}
+
+@media (max-width: 576px) {
+  .padding-175 {
+    padding: 140px 20px 40px 20px;
+  }
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* btn_2  */
+.form_btn-2 {
+  margin-bottom: 20px;
+}
+
+.checkbox-2 {
+  display: block;
+  width: 260px;
+  height: 42px;
+  /* background:   #e7e7f1; */
+  border-radius: 12px;
+  /* border: 1px solid black; */
+  padding: 2px;
+  position: relative;
+  cursor: pointer;
+  margin: 0 auto;
+  background: #E6E6F0;
+  margin-bottom: 40px;
+}
+
+.word {
+  font-size: 18px;
+  line-height: 1.1;
+  font-weight: 600;
+  color: #323264;
+}
+
+.word-1 {
+  position: absolute;
+  top: 10px;
+  left: 156px;
+}
+
+.word-2 {
+  position: absolute;
+  top: 10px;
+  left: 35px;
+}
+
+.checkbox-2::before {
+  content: "";
+  background-color: #ffffff;
+  display: block;
+  width: 127px;
+  height: 36px;
+  border-radius: 10px;
+  position: absolute;
+  left: 3px;
+  bottom: 3px;
+  /* transition: .5s; */
+}
+
+#btn-2:checked ~ .checkbox-2::before {
+  background: #ffffff;
+  margin-left: auto;
+  right: 3px;
+}
+
+.publications-2 {
+  padding: 175px 0px 0 0px;
+  width: 906px;
+  margin: 0 auto;
+}
+.publications-2 h5 {
+  font-size: 32px;
+  line-height: 1.1;
+  font-weight: 600;
+  color: #323264;
+  max-width: 865px;
+  padding: 40px 20px 10px 20px;
+}
+.publications-2 .data {
+  font-size: 12px;
+  line-height: 1.1;
+  font-weight: 600;
+  color: #B3B3BA;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 0 20px 40px 20px;
+}
+.publications-2 .gray-top-border {
+  border-top: 4px solid #EDEDF7;
+  padding: 40px 0px 0 0px;
+  margin: 0 20px;
+}
+.publications-2 p {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #000000;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 20px 20px 0 20px;
+}
+.publications-2 h4 {
+  font-size: 41px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #323264;
+  padding: 40px 0 40px 0;
+}
+.publications-2 h6 {
+  font-size: 24px;
+  line-height: 1.1;
+  font-weight: 600;
+  color: #323264;
+  padding: 0 20px 15px 20px;
+}
+.publications-2 .numbers {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #F0145A;
+}
+.publications-2 li {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #000000;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 0 20px 0 0;
 }/*# sourceMappingURL=css.css.map */

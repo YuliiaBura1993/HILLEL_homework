@@ -1,3 +1,137 @@
 .padding-175{
-    padding: 175px 60px 0 60px;
+    padding: 175px 60px 40px 60px;
 }
+.margin-btn{
+    margin-top: 80px !important;
+    // margin-bottom: 60px;
+}
+.margin-top-40{
+    margin-top: 40px;
+}
+.margin-top-20{
+    margin-top: 20px;
+}
+
+
+@media (max-width: 576px) {
+    .padding-175{
+        padding: 140px 20px 40px 20px;
+    }
+}
+
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  
+  /* btn_2  */
+  .form_btn-2{
+    margin-bottom: 20px;
+  }
+  .checkbox-2{
+    display: block;
+    width: 260px;
+    height: 42px;
+    /* background:   #e7e7f1; */
+    border-radius: 12px;
+    /* border: 1px solid black; */
+    // box-shadow: 3px 3px 5px #afaaaa, -3px -3px 5px white;
+    padding: 2px;
+    position: relative;
+    cursor: pointer;
+    margin: 0 auto;
+    background: #E6E6F0;
+    margin-bottom: 40px;
+  }
+  .word{
+    @include font(18px, 1.1, 600, $dark-blue);
+  }
+  .word-1{
+    position: absolute;
+    top: 10px;
+    left: 156px;
+  }
+  .word-2{
+    position: absolute;
+    top: 10px;
+    left: 35px;
+  }
+  .checkbox-2::before{
+    content: '';
+    background-color: #ffffff;
+    display: block;
+    width: 127px;
+    height: 36px;
+    border-radius: 10px;
+    position: absolute;
+    left: 3px;
+    bottom: 3px;
+    /* transition: .5s; */
+    // z-index: 10;
+  }
+  #btn-2:checked ~ .checkbox-2::before{
+    background: #ffffff;
+    margin-left: auto;
+    right: 3px;
+    // z-index: 10;
+  }
+
+  .publications-2{
+    padding: 175px 0px 0 0px;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    width: 906px;
+    margin: 0 auto;
+    img{
+    }
+    h5{
+        @include font(32px, 1.1, 600, $dark-blue);
+        max-width: 865px;
+        padding: 40px 20px 10px 20px;
+    }
+    .data{
+        @include font(12px, 1.1, 600, $light-gray);
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        padding: 0 20px 40px 20px;
+    }
+    .gray-top-border{
+        border-top: 4px solid #EDEDF7;
+        padding: 40px 0px 0 0px;
+        // margin: 0 20px 0 20px;
+        margin: 0 20px;
+    }
+    p{
+        @include font(18px, 1.2, 400, $black);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding: 20px 20px 0 20px;
+    }
+    h4{
+        @include font(41px, 1.2, 600, $dark-blue);
+        padding: 40px 0 40px 0;
+    }
+    // ol{
+    //     list-style-type: lower-latin;
+    // }
+    // li {
+    //     color: red; /* Цвет маркеров */
+    // }
+    // li span {
+    //     color: navy; /* Цвет текста */
+    // }
+    h6{
+        @include font(24px, 1.1, 600, $dark-blue);
+        padding: 0 20px 15px 20px;
+    }
+    .numbers{
+        @include font(18px, 1.2, 600, $crimson);
+    }
+    li{
+        @include font(18px, 1.2, 400, $black);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding: 0 20px 0 0;
+    }
+  }
