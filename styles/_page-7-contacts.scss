@@ -6,6 +6,7 @@
     .left-side-contacts{
         // margin: 215px 20px 0 20px;
         width: 565px;
+        margin: 0 20px 0 0;
         p{
             margin-bottom: 0;
         }
@@ -85,6 +86,97 @@
             margin: 0 auto;
             display: block;
             @include font(14px, 1.1, 600, $white);
+        }
+    }
+}
+
+.middle-map{
+    display: none;
+}
+.big-map{
+    display: block;
+    margin: 0 auto;
+}
+.small-map{
+    display: none;     
+}
+
+
+@media (max-width: 1439px) {
+    .big-map{
+        display: none;
+    }
+    .middle-map{
+        display: block;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 992px) {
+    .middle-map{
+        display: none;
+    }
+    .small-map{
+        display: block;
+        margin: 0 auto;
+    }
+
+
+    .contacts_page-7{
+        padding: 200px 20px 80px 20px;
+        flex-direction: column;
+
+        .left-side-contacts{
+            // margin: 215px 20px 0 20px;
+            width: 527px;
+            margin: 0 0px 0 0;
+            padding: 0 20px 40px 20px;
+           
+        }
+    }
+}
+
+
+@media (max-width: 557px) {
+    // .middle-map{
+    //     display: none;
+    // }
+    // .small-map{
+    //     display: block;
+    //     margin: 0 auto;
+    // }
+
+
+    .contacts_page-7{
+        padding: 140px 20px 60px 20px;
+        .left-side-contacts{
+            width: 375px;
+            .adress{
+                width: 333px;
+            }
+            .img-block{
+                width: 333px;
+            }
+        }
+    
+        .right-side-form{
+            width: 375px;
+            background: $backgraund_gray;
+            padding: 20px;
+            h4{
+                @include font(22px, 1.1, 600, $blue);
+                margin: 0 0 20px 0;
+            }
+            .name{
+                width: 335px;
+      
+            }
+      
+            .telefon{
+                width: 335px;
+            }
+            .email{
+                width: 335px;
+            }
         }
     }
 }
