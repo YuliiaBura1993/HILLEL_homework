@@ -41,5 +41,56 @@
 
     .right-side-form{
         width: 527px;
+        background: $backgraund_gray;
+        padding: 20px;
+        h4{
+            @include font(32px, 1.1, 600, $blue);
+            margin: 0 0 20px 0;
+        }
+        .name{
+            width: 487px;
+            border: none;
+            padding: 10px;
+        }
+        .sms{
+            width: 487px;
+            height: 180px;
+            border: none;
+            padding: 10px;
+            margin: 20px 0 0 0;
+        }
+        .how-to-answer{
+            @include font(14px, 1.1, 600, $light-gray);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin: 20px 0;
+        }
+        .telefon{
+            width: 487px;
+            border: none;
+            padding: 10px;
+            margin: 20px 0 0 0;
+        }
+        .email{
+            width: 487px;
+            border: none;
+            padding: 10px;
+            margin: 20px 0 20px 0;
+        }
+        .btn-submit{
+            padding: 15px 50px;
+            border-radius: 12px;    
+            background: #24A3FF;
+            border: none;
+            margin: 0 auto;
+            display: block;
+            @include font(14px, 1.1, 600, $white);
+        }
+    }
+}
+
+.footer{
+    .border-none{
+        border-top: none;
     }
 }

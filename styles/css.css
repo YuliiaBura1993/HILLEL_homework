@@ -2733,4 +2733,62 @@ a {
 }
 .contacts_page-7 .right-side-form {
   width: 527px;
+  background: #F5F5FA;
+  padding: 20px;
+}
+.contacts_page-7 .right-side-form h4 {
+  font-size: 32px;
+  line-height: 1.1;
+  font-weight: 600;
+  color: #24A3FF;
+  margin: 0 0 20px 0;
+}
+.contacts_page-7 .right-side-form .name {
+  width: 487px;
+  border: none;
+  padding: 10px;
+}
+.contacts_page-7 .right-side-form .sms {
+  width: 487px;
+  height: 180px;
+  border: none;
+  padding: 10px;
+  margin: 20px 0 0 0;
+}
+.contacts_page-7 .right-side-form .how-to-answer {
+  font-size: 14px;
+  line-height: 1.1;
+  font-weight: 600;
+  color: #B3B3BA;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+.contacts_page-7 .right-side-form .telefon {
+  width: 487px;
+  border: none;
+  padding: 10px;
+  margin: 20px 0 0 0;
+}
+.contacts_page-7 .right-side-form .email {
+  width: 487px;
+  border: none;
+  padding: 10px;
+  margin: 20px 0 20px 0;
+}
+.contacts_page-7 .right-side-form .btn-submit {
+  padding: 15px 50px;
+  border-radius: 12px;
+  background: #24A3FF;
+  border: none;
+  margin: 0 auto;
+  display: block;
+  font-size: 14px;
+  line-height: 1.1;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.footer .border-none {
+  border-top: none;
 }/*# sourceMappingURL=css.css.map */
