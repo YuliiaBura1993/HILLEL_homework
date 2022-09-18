@@ -2526,12 +2526,12 @@ a {
   right: 3px;
 }
 
-.publications-2 {
+.section-publications-2 {
   padding: 175px 0px 0 0px;
   width: 906px;
   margin: 0 auto;
 }
-.publications-2 h5 {
+.section-publications-2 h5 {
   font-size: 32px;
   line-height: 1.1;
   font-weight: 600;
@@ -2539,7 +2539,7 @@ a {
   max-width: 865px;
   padding: 40px 20px 10px 20px;
 }
-.publications-2 .data {
+.section-publications-2 .data {
   font-size: 12px;
   line-height: 1.1;
   font-weight: 600;
@@ -2548,17 +2548,17 @@ a {
   text-transform: uppercase;
   padding: 0 20px 40px 20px;
 }
-.publications-2 .gray-top-border {
+.section-publications-2 .gray-top-border {
   border-top: 4px solid #EDEDF7;
   padding: 40px 0px 0 0px;
   margin: 0 20px;
 }
-.publications-2 .gray-bottom-border {
+.section-publications-2 .gray-bottom-border {
   border-bottom: 4px solid #EDEDF7;
   padding: 0 0 40px 0;
   margin: 0 20px;
 }
-.publications-2 p {
+.section-publications-2 p {
   font-size: 18px;
   line-height: 1.2;
   font-weight: 400;
@@ -2566,27 +2566,27 @@ a {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   padding: 20px 20px 0 20px;
 }
-.publications-2 h4 {
+.section-publications-2 h4 {
   font-size: 41px;
   line-height: 1.2;
   font-weight: 600;
   color: #323264;
   padding: 40px 0 40px 0;
 }
-.publications-2 h6 {
+.section-publications-2 h6 {
   font-size: 24px;
   line-height: 1.1;
   font-weight: 600;
   color: #323264;
   padding: 0 20px 15px 20px;
 }
-.publications-2 .numbers {
+.section-publications-2 .numbers {
   font-size: 18px;
   line-height: 1.2;
   font-weight: 600;
   color: #F0145A;
 }
-.publications-2 li {
+.section-publications-2 li {
   font-size: 18px;
   line-height: 1.2;
   font-weight: 400;
@@ -2594,21 +2594,88 @@ a {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   padding: 0 20px 0 0;
 }
-.publications-2 .img-2 {
+.section-publications-2 .img-2 {
   margin: 0 auto;
   display: block;
   padding: 10px 0 0px 0;
 }
-.publications-2 .img-description {
+.section-publications-2 .img-description {
   font-size: 16px;
   line-height: 1.2;
   font-weight: 400;
   color: #B3B3BA;
   text-align: center;
 }
-.publications-2 .h6 {
+.section-publications-2 .h6 {
   padding: 20px 0 10px 20px;
 }
-.publications-2 .network-btn img {
+.section-publications-2 .network-btn img {
   padding: 20px 0 40px 20px;
+}
+
+@media (max-width: 992px) {
+  .section-publications-2 {
+    padding: 145px 0px 0 0px;
+    width: 576px;
+    margin: 0 auto;
+  }
+  .section-publications-2 img {
+    width: 576px;
+  }
+  .section-publications-2 h5 {
+    font-size: 22px;
+    line-height: 1.1;
+    font-weight: 600;
+    color: #323264;
+    padding: 20px 20px 10px 20px;
+  }
+  .section-publications-2 .data {
+    padding: 0 20px 20px 20px;
+    margin-bottom: 0;
+  }
+  .section-publications-2 .gray-top-border {
+    padding: 20px 0px 0 0px;
+  }
+  .section-publications-2 h4 {
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #323264;
+    padding: 20px 20px 20px 20px;
+  }
+  .section-publications-2 h6 {
+    font-size: 18px;
+    line-height: 1.1;
+    font-weight: 600;
+    color: #323264;
+  }
+  .section-publications-2 .h6 {
+    padding: 20px 0 0px 20px;
+  }
+  .section-publications-2 .network-btn {
+    display: flex;
+    justify-content: center;
+  }
+  .section-publications-2 .network-btn img {
+    padding: 0px 0px 0px 0px;
+    width: 24px;
+    height: 24px;
+    margin: 20px 10px 0 10px;
+  }
+}
+@media (max-width: 576px) {
+  .section-publications-2 {
+    width: 375px;
+  }
+  .section-publications-2 img {
+    width: 375px;
+  }
+}
+@media (max-width: 375px) {
+  .section-publications-2 {
+    width: 320px;
+  }
+  .section-publications-2 img {
+    width: 300px;
+  }
 }/*# sourceMappingURL=css.css.map */
