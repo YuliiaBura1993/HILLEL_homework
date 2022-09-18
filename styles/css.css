@@ -2678,4 +2678,59 @@ a {
   .section-publications-2 img {
     width: 300px;
   }
+}
+.contacts_page-7 {
+  padding: 215px 20px 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contacts_page-7 .left-side-contacts {
+  width: 565px;
+}
+.contacts_page-7 .left-side-contacts p {
+  margin-bottom: 0;
+}
+.contacts_page-7 .left-side-contacts .adress {
+  width: 410px;
+  border-bottom: 4px solid #E6E6F0;
+  padding: 0 0 20px 0;
+  font-size: 21px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #323264;
+}
+.contacts_page-7 .left-side-contacts .telefon {
+  font-size: 21px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #323264;
+  padding: 40px 0 20px 0;
+}
+.contacts_page-7 .left-side-contacts .email {
+  font-size: 21px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #24A3FF;
+  padding: 0 0 40px 0;
+}
+.contacts_page-7 .left-side-contacts .img-block {
+  display: flex;
+  align-items: center;
+  padding: 25px 0 0 0;
+  border-top: 4px solid #E6E6F0;
+  width: 412px;
+}
+.contacts_page-7 .left-side-contacts .img-block .img-text {
+  width: 123px;
+  font-size: 12px;
+  line-height: 1.1;
+  font-weight: 600;
+  color: #24A3FF;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0 0 0 10px;
+}
+.contacts_page-7 .right-side-form {
+  width: 527px;
 }/*# sourceMappingURL=css.css.map */
