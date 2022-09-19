@@ -28,24 +28,28 @@
 }
 
 
-.page-4-section-1{
+.about-us-backgr{
     background: linear-gradient(228.57deg, #323264 11.93%, #323264 103.17%, #643E72 100.46%);
+}
+.page-4-section-1{
+  
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    background-image: url(../img/page-4/backg-services-2.png);
+    background-repeat: no-repeat;
     .backg-keyboard{
         margin: 0 auto;
         // max-width: 1440px;
         width: 100%;
         padding: 160px 0 40px 0;
-        background-image: url(../img/page-4/backg-services-2.png);
+        // background-image: url(../img/page-4/backg-services-2.png);
 
         // КАК СДЕЛАТЬ БЭКГРАУНД ПОСЕРЕДИНКЕ
         // background-attachment: fixed;
         // background-position: center; 
 
-        background-repeat: no-repeat;
+     
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -53,6 +57,7 @@
         img{
             // padding: 150px 0 0 0;
            width: 92px;
+           
         }
         h4{
             @include font(42px, 1.2, 600, $light-gray);
@@ -190,3 +195,50 @@
     }
 }
 
+
+
+.modal-window{
+    background: transparent;
+
+}
+
+.backgr-mod-wind{
+    background: #707093;
+    // opacity: 70%;
+}
+@media (max-width: 557px) {
+    .backgr-mod-wind{
+        background: $backgraund_gray;
+        opacity: none;
+    }
+
+    .contacts_page-7{
+ 
+        .border-radius-12{
+            border-radius: 12px;
+            // box-shadow: 0px 0px 0px 0px transparent;
+        }
+    }
+}
+
+.cross-modal-wind{
+   
+    font-size: 43px;
+    // font-weight: 400;
+    margin-left: 30px;
+}
+
+.contacts_page-7{
+ 
+    .border-radius-12{
+        border-radius: 12px;
+        // box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.5);
+    }
+}
+.padding-100{
+    padding: 150px !important;
+}
+
+.shadow-blue{
+    box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+}

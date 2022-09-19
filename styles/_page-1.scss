@@ -639,6 +639,19 @@
             div{
                 border-right: 2px solid white;
             }
+
+            .div-text1:hover{
+                border-right: 3px solid $crimson;
+            }
+            .div-text2:hover{
+                border-right: 3px solid $crimson;
+            }
+            .div-text3:hover{
+                border-right: 3px solid $crimson;
+            }
+            .div-text4:hover{
+                border-right: 3px solid $crimson;
+            }
         }
       
         .section_1-card-right{
@@ -658,10 +671,12 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;  
+            // border-right: 3px solid red;
+            
         }
-        .div-text1:hover{
-            border-right: 3px solid red;
-        }
+        // .div-text1:hover{
+        //     border-right: 3px solid red;
+        // }
         .text2:hover{
             background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
             -webkit-background-clip: text;

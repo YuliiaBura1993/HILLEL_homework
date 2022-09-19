@@ -24,6 +24,10 @@
             }
         }
 
+        // .logo-no-hover:hover{
+        //     text-decoration: none !important;
+        //     @include font(45px, 1.1, 600, $crimson);
+        // }
         .header {
             background: $white;
             position: fixed;
@@ -45,6 +49,8 @@
                 button:hover{
                     background: $crimson;
                     border-radius: 20%;
+                    // color: $white;
+                    // @include font(12px, 1.1, 600, $white);
                 }
             }
         
@@ -149,11 +155,36 @@
         display: block;
         text-decoration: none;
     }
-    .header li a:hover,
-    .header .menu-btn:hover {
-        text-decoration: underline;
-        @include font(18px, 1.1, 600, $crimson);
+
+
+
+    // .header li a:hover,
+    // .header .menu-btn:hover {
+    //     text-decoration: underline;
+    //     @include font(18px, 1.1, 600, $crimson);
+    // }
+
+    
+    
+
+    // ИСПРАВИЛА ЛОГО!!!!!
+.header{
+    .wrap-menu{
+        li a:hover{
+            text-decoration: underline;
+            color: $crimson;
+        }
     }
+}
+
+.header .menu-btn:hover {
+    text-decoration: underline;
+    @include font(18px, 1.1, 600, $crimson);
+}
+
+
+
+
 
     .header .logo {
         display: block;
@@ -164,6 +195,8 @@
         top: 10px;
         left: 20px;
     }
+
+
 
     .header .menu {
         clear: both;
@@ -251,6 +284,9 @@
             text-decoration: none;
         }
 
+        // .logo-no-hover:hover{
+        //     text-decoration: none !important;
+        // }
 
         .header{
             background: $white;
